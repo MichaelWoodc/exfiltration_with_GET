@@ -1,0 +1,1 @@
+When working with minimal systems, some are unable to work with https, and some even unable to post their files due to various reasons.  In these cases, many devices still allow GET requests.  What better way to transfer these files to your server than with a GET request from the client device?
