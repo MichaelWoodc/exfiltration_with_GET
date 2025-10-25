@@ -1,0 +1,985 @@
+[2025-10-24 21:16:44] FILE_START: product.cfg (path: /pref/product.cfg)
+[2025-10-24 21:16:45] [product.cfg] LINE:1: ### read only ###
+[2025-10-24 21:16:46] [product.cfg] LINE:2: BRAND=Drift
+[2025-10-24 21:16:46] [product.cfg] LINE:3: MODEL=GHOST X
+[2025-10-24 21:16:47] [product.cfg] LINE:4: 
+[2025-10-24 21:16:47] [product.cfg] LINE:5: ################################################
+[2025-10-24 21:16:47] [product.cfg] LINE:6: 
+[2025-10-24 21:16:48] [product.cfg] LINE:7: wifi_on=1
+[2025-10-24 21:16:48] [product.cfg] LINE:8: Fn=setting
+[2025-10-24 21:16:49] [product.cfg] LINE:9: auto_off=0
+[2025-10-24 21:16:49] [product.cfg] LINE:10: lang=en
+[2025-10-24 21:16:50] [product.cfg] LINE:11: photo_tl=0
+[2025-10-24 21:16:50] [product.cfg] LINE:12: caf=1
+[2025-10-24 21:16:51] [product.cfg] LINE:13: hdmi_osd=1
+[2025-10-24 21:16:51] [product.cfg] LINE:14: F2=onoff_lcd
+[2025-10-24 21:16:52] [product.cfg] LINE:15: photo_tl_interval=5
+[2025-10-24 21:16:52] [product.cfg] LINE:16: photo_tl_num=100
+[2025-10-24 21:16:52] [product.cfg] LINE:17: drive_mode=single
+[2025-10-24 21:16:53] [product.cfg] LINE:18: 
+[2025-10-24 21:16:53] [product.cfg] LINE:19: ##################################################################
+[2025-10-24 21:16:54] [product.cfg] LINE:20: AP_SSID=Cam
+[2025-10-24 21:16:54] [product.cfg] LINE:21: AP_PASSWD=1234567890
+[2025-10-24 21:16:55] [product.cfg] LINE:22: # IP address
+[2025-10-24 21:16:55] [product.cfg] LINE:23: LOCAL_IP=192.168.42.1
+[2025-10-24 21:16:56] [product.cfg] LINE:24: # IP subnet mask
+[2025-10-24 21:16:56] [product.cfg] LINE:25: LOCAL_NETMASK=255.255.255.0
+[2025-10-24 21:16:57] [product.cfg] LINE:26: # IP pool starting address of DHCP server
+[2025-10-24 21:16:57] [product.cfg] LINE:27: DHCP_IP_START=192.168.42.2
+[2025-10-24 21:16:58] [product.cfg] LINE:28: # IP pool end address of DHCP server
+[2025-10-24 21:16:58] [product.cfg] LINE:29: DHCP_IP_END=192.168.42.21
+[2025-10-24 21:16:58] [product.cfg] LINE:30: # Wifi channel number, set 0 to use Auto Channel Selection
+[2025-10-24 21:16:59] [product.cfg] LINE:31: AP_CHANNEL=0
+[2025-10-24 21:16:59] [product.cfg] LINE:32: # Maximum number of stations allowed in station table
+[2025-10-24 21:17:00] [product.cfg] LINE:33: AP_MAXSTA=20
+[2025-10-24 21:17:00] [product.cfg] LINE:34: # If you say yes here, all WPA/WEP settings will be ignored
+[2025-10-24 21:17:01] [product.cfg] LINE:35: AP_PUBLIC=no
+[2025-10-24 21:17:01] [product.cfg] LINE:36: # WPA Passphrase (8 ~ 63 characters)
+[2025-10-24 21:17:02] FILE_END: product.cfg (sent 36/36 lines)
+[2025-10-24 21:17:03] FILE_START: mosquitto.conf (path: /pref/mosquitto.conf)
+[2025-10-24 21:17:04] [mosquitto.conf] LINE:1: # Config file for mosquitto
+[2025-10-24 21:17:04] [mosquitto.conf] LINE:2: #
+[2025-10-24 21:17:05] [mosquitto.conf] LINE:3: # See mosquitto.conf(5) for more information.
+[2025-10-24 21:17:05] [mosquitto.conf] LINE:4: #
+[2025-10-24 21:17:06] [mosquitto.conf] LINE:5: # Default values are shown, uncomment to change.
+[2025-10-24 21:17:06] [mosquitto.conf] LINE:6: #
+[2025-10-24 21:17:07] [mosquitto.conf] LINE:7: # Use the # character to indicate a comment, but only if it is the 
+[2025-10-24 21:17:07] [mosquitto.conf] LINE:8: # very first character on the line.
+[2025-10-24 21:17:07] [mosquitto.conf] LINE:9: 
+[2025-10-24 21:17:08] [mosquitto.conf] LINE:10: # =================================================================
+[2025-10-24 21:17:08] [mosquitto.conf] LINE:11: # General configuration
+[2025-10-24 21:17:09] [mosquitto.conf] LINE:12: # =================================================================
+[2025-10-24 21:17:09] [mosquitto.conf] LINE:13: 
+[2025-10-24 21:17:10] [mosquitto.conf] LINE:14: # Time in seconds to wait before resending an outgoing QoS=1 or 
+[2025-10-24 21:17:10] [mosquitto.conf] LINE:15: # QoS=2 message.
+[2025-10-24 21:17:11] [mosquitto.conf] LINE:16: #retry_interval 20
+[2025-10-24 21:17:11] [mosquitto.conf] LINE:17: 
+[2025-10-24 21:17:12] [mosquitto.conf] LINE:18: # Time in seconds between updates of the $SYS tree.
+[2025-10-24 21:17:12] [mosquitto.conf] LINE:19: # Set to 0 to disable the publishing of the $SYS tree.
+[2025-10-24 21:17:12] [mosquitto.conf] LINE:20: #sys_interval 10
+[2025-10-24 21:17:13] [mosquitto.conf] LINE:21: 
+[2025-10-24 21:17:13] [mosquitto.conf] LINE:22: # Time in seconds between cleaning the internal message store of 
+[2025-10-24 21:17:14] [mosquitto.conf] LINE:23: # unreferenced messages. Lower values will result in lower memory 
+[2025-10-24 21:17:14] [mosquitto.conf] LINE:24: # usage but more processor time, higher values will have the 
+[2025-10-24 21:17:15] [mosquitto.conf] LINE:25: # opposite effect.
+[2025-10-24 21:17:15] [mosquitto.conf] LINE:26: # Setting a value of 0 means the unreferenced messages will be 
+[2025-10-24 21:17:16] [mosquitto.conf] LINE:27: # disposed of as quickly as possible.
+[2025-10-24 21:17:16] [mosquitto.conf] LINE:28: #store_clean_interval 10
+[2025-10-24 21:17:17] [mosquitto.conf] LINE:29: 
+[2025-10-24 21:17:17] [mosquitto.conf] LINE:30: # Write process id to a file. Default is a blank string which means 
+[2025-10-24 21:17:18] [mosquitto.conf] LINE:31: # a pid file shouldn't be written.
+[2025-10-24 21:17:18] [mosquitto.conf] LINE:32: # This should be set to /var/run/mosquitto.pid if mosquitto is
+[2025-10-24 21:17:18] [mosquitto.conf] LINE:33: # being run automatically on boot with an init script and 
+[2025-10-24 21:17:19] [mosquitto.conf] LINE:34: # start-stop-daemon or similar.
+[2025-10-24 21:17:19] [mosquitto.conf] LINE:35: #pid_file
+[2025-10-24 21:17:20] [mosquitto.conf] LINE:36: 
+[2025-10-24 21:17:20] [mosquitto.conf] LINE:37: # When run as root, drop privileges to this user and its primary 
+[2025-10-24 21:17:21] [mosquitto.conf] LINE:38: # group.
+[2025-10-24 21:17:21] [mosquitto.conf] LINE:39: # Leave blank to stay as root, but this is not recommended.
+[2025-10-24 21:17:22] [mosquitto.conf] LINE:40: # If run as a non-root user, this setting has no effect.
+[2025-10-24 21:17:22] [mosquitto.conf] LINE:41: # Note that on Windows this has no effect and so mosquitto should 
+[2025-10-24 21:17:23] [mosquitto.conf] LINE:42: # be started by the user you wish it to run as.
+[2025-10-24 21:17:23] [mosquitto.conf] LINE:43: #user mosquitto
+[2025-10-24 21:17:24] [mosquitto.conf] LINE:44: user root
+[2025-10-24 21:17:24] [mosquitto.conf] LINE:45: 
+[2025-10-24 21:17:25] [mosquitto.conf] LINE:46: # The maximum number of QoS 1 and 2 messages currently inflight per 
+[2025-10-24 21:17:25] [mosquitto.conf] LINE:47: # client.
+[2025-10-24 21:17:26] [mosquitto.conf] LINE:48: # This includes messages that are partway through handshakes and 
+[2025-10-24 21:17:26] [mosquitto.conf] LINE:49: # those that are being retried. Defaults to 20. Set to 0 for no 
+[2025-10-24 21:17:26] [mosquitto.conf] LINE:50: # maximum. Setting to 1 will guarantee in-order delivery of QoS 1 
+[2025-10-24 21:17:27] [mosquitto.conf] LINE:51: # and 2 messages.
+[2025-10-24 21:17:27] [mosquitto.conf] LINE:52: #max_inflight_messages 20
+[2025-10-24 21:17:28] [mosquitto.conf] LINE:53: 
+[2025-10-24 21:17:28] [mosquitto.conf] LINE:54: # The maximum number of QoS 1 and 2 messages to hold in a queue 
+[2025-10-24 21:17:29] [mosquitto.conf] LINE:55: # above those that are currently in-flight.  Defaults to 100. Set 
+[2025-10-24 21:17:29] [mosquitto.conf] LINE:56: # to 0 for no maximum (not recommended).
+[2025-10-24 21:17:30] [mosquitto.conf] LINE:57: # See also queue_qos0_messages.
+[2025-10-24 21:17:30] [mosquitto.conf] LINE:58: #max_queued_messages 100
+[2025-10-24 21:17:31] [mosquitto.conf] LINE:59: 
+[2025-10-24 21:17:31] [mosquitto.conf] LINE:60: # Set to true to queue messages with QoS 0 when a persistent client is
+[2025-10-24 21:17:31] [mosquitto.conf] LINE:61: # disconnected. These messages are included in the limit imposed by
+[2025-10-24 21:17:32] [mosquitto.conf] LINE:62: # max_queued_messages.
+[2025-10-24 21:17:32] [mosquitto.conf] LINE:63: # Defaults to false.
+[2025-10-24 21:17:33] [mosquitto.conf] LINE:64: # This is a non-standard option for the MQTT v3.1 spec but is allowed in
+[2025-10-24 21:17:33] [mosquitto.conf] LINE:65: # v3.1.1.
+[2025-10-24 21:17:34] [mosquitto.conf] LINE:66: #queue_qos0_messages false
+[2025-10-24 21:17:34] [mosquitto.conf] LINE:67: 
+[2025-10-24 21:17:35] [mosquitto.conf] LINE:68: # This option sets the maximum publish payload size that the broker will allow.
+[2025-10-24 21:17:35] [mosquitto.conf] LINE:69: # Received messages that exceed this size will not be accepted by the broker.
+[2025-10-24 21:17:36] [mosquitto.conf] LINE:70: # The default value is 0, which means that all valid MQTT messages are
+[2025-10-24 21:17:36] [mosquitto.conf] LINE:71: # accepted. MQTT imposes a maximum payload size of 268435455 bytes. 
+[2025-10-24 21:17:37] [mosquitto.conf] LINE:72: #message_size_limit 0
+[2025-10-24 21:17:37] [mosquitto.conf] LINE:73: 
+[2025-10-24 21:17:37] [mosquitto.conf] LINE:74: # This option controls whether a client is allowed to connect with a zero
+[2025-10-24 21:17:38] [mosquitto.conf] LINE:75: # length client id or not. This option only affects clients using MQTT v3.1.1
+[2025-10-24 21:17:39] [mosquitto.conf] LINE:76: # and later. If set to false, clients connecting with a zero length client id
+[2025-10-24 21:17:39] [mosquitto.conf] LINE:77: # are disconnected. If set to true, clients will be allocated a client id by
+[2025-10-24 21:17:39] [mosquitto.conf] LINE:78: # the broker. This means it is only useful for clients with clean session set
+[2025-10-24 21:17:40] [mosquitto.conf] LINE:79: # to true.
+[2025-10-24 21:17:40] [mosquitto.conf] LINE:80: allow_zero_length_clientid false
+[2025-10-24 21:17:41] [mosquitto.conf] LINE:81: 
+[2025-10-24 21:17:41] [mosquitto.conf] LINE:82: # If allow_zero_length_clientid is true, this option allows you to set a prefix
+[2025-10-24 21:17:42] [mosquitto.conf] LINE:83: # to automatically generated client ids to aid visibility in logs.
+[2025-10-24 21:17:42] [mosquitto.conf] LINE:84: #auto_id_prefix
+[2025-10-24 21:17:43] [mosquitto.conf] LINE:85: 
+[2025-10-24 21:17:43] [mosquitto.conf] LINE:86: # This option allows persistent clients (those with clean session set to false)
+[2025-10-24 21:17:44] [mosquitto.conf] LINE:87: # to be removed if they do not reconnect within a certain time frame.
+[2025-10-24 21:17:44] [mosquitto.conf] LINE:88: #
+[2025-10-24 21:17:45] [mosquitto.conf] LINE:89: # This is a non-standard option in MQTT V3.1 but allowed in MQTT v3.1.1.
+[2025-10-24 21:17:45] [mosquitto.conf] LINE:90: #
+[2025-10-24 21:17:45] [mosquitto.conf] LINE:91: # Badly designed clients may set clean session to false whilst using a randomly
+[2025-10-24 21:17:46] [mosquitto.conf] LINE:92: # generated client id. This leads to persistent clients that will never
+[2025-10-24 21:17:46] [mosquitto.conf] LINE:93: # reconnect. This option allows these clients to be removed.
+[2025-10-24 21:17:47] [mosquitto.conf] LINE:94: #
+[2025-10-24 21:17:47] [mosquitto.conf] LINE:95: # The expiration period should be an integer followed by one of h d w m y for
+[2025-10-24 21:17:48] [mosquitto.conf] LINE:96: # hour, day, week, month and year respectively. For example
+[2025-10-24 21:17:48] [mosquitto.conf] LINE:97: #
+[2025-10-24 21:17:49] [mosquitto.conf] LINE:98: # persistent_client_expiration 2m
+[2025-10-24 21:17:49] [mosquitto.conf] LINE:99: # persistent_client_expiration 14d
+[2025-10-24 21:17:50] [mosquitto.conf] LINE:100: # persistent_client_expiration 1y
+[2025-10-24 21:17:50] [mosquitto.conf] LINE:101: #
+[2025-10-24 21:17:50] [mosquitto.conf] LINE:102: # The default if not set is to never expire persistent clients.
+[2025-10-24 21:17:51] [mosquitto.conf] LINE:103: persistent_client_expiration 1d
+[2025-10-24 21:17:51] [mosquitto.conf] LINE:104: 
+[2025-10-24 21:17:52] [mosquitto.conf] LINE:105: # If a client is subscribed to multiple subscriptions that overlap, e.g. foo/#
+[2025-10-24 21:17:52] [mosquitto.conf] LINE:106: # and foo/+/baz , then MQTT expects that when the broker receives a message on
+[2025-10-24 21:17:53] [mosquitto.conf] LINE:107: # a topic that matches both subscriptions, such as foo/bar/baz, then the client
+[2025-10-24 21:17:53] [mosquitto.conf] LINE:108: # should only receive the message once.
+[2025-10-24 21:17:54] [mosquitto.conf] LINE:109: # Mosquitto keeps track of which clients a message has been sent to in order to
+[2025-10-24 21:17:54] [mosquitto.conf] LINE:110: # meet this requirement. The allow_duplicate_messages option allows this
+[2025-10-24 21:17:55] [mosquitto.conf] LINE:111: # behaviour to be disabled, which may be useful if you have a large number of
+[2025-10-24 21:17:55] [mosquitto.conf] LINE:112: # clients subscribed to the same set of topics and are very concerned about
+[2025-10-24 21:17:56] [mosquitto.conf] LINE:113: # minimising memory usage.
+[2025-10-24 21:17:56] [mosquitto.conf] LINE:114: # It can be safely set to true if you know in advance that your clients will
+[2025-10-24 21:17:56] [mosquitto.conf] LINE:115: # never have overlapping subscriptions, otherwise your clients must be able to
+[2025-10-24 21:17:57] [mosquitto.conf] LINE:116: # correctly deal with duplicate messages even when then have QoS=2.
+[2025-10-24 21:17:57] [mosquitto.conf] LINE:117: #allow_duplicate_messages false
+[2025-10-24 21:17:58] [mosquitto.conf] LINE:118: 
+[2025-10-24 21:17:58] [mosquitto.conf] LINE:119: # The MQTT specification requires that the QoS of a message delivered to a
+[2025-10-24 21:17:59] [mosquitto.conf] LINE:120: # subscriber is never upgraded to match the QoS of the subscription. Enabling
+[2025-10-24 21:17:59] [mosquitto.conf] LINE:121: # this option changes this behaviour. If upgrade_outgoing_qos is set true,
+[2025-10-24 21:18:00] [mosquitto.conf] LINE:122: # messages sent to a subscriber will always match the QoS of its subscription.
+[2025-10-24 21:18:00] [mosquitto.conf] LINE:123: # This is a non-standard option explicitly disallowed by the spec.
+[2025-10-24 21:18:01] [mosquitto.conf] LINE:124: #upgrade_outgoing_qos false
+[2025-10-24 21:18:01] [mosquitto.conf] LINE:125: 
+[2025-10-24 21:18:02] [mosquitto.conf] LINE:126: # =================================================================
+[2025-10-24 21:18:02] [mosquitto.conf] LINE:127: # Default listener
+[2025-10-24 21:18:02] [mosquitto.conf] LINE:128: # =================================================================
+[2025-10-24 21:18:03] [mosquitto.conf] LINE:129: 
+[2025-10-24 21:18:03] [mosquitto.conf] LINE:130: # IP address/hostname to bind the default listener to. If not
+[2025-10-24 21:18:04] [mosquitto.conf] LINE:131: # given, the default listener will not be bound to a specific 
+[2025-10-24 21:18:04] [mosquitto.conf] LINE:132: # address and so will be accessible to all network interfaces.
+[2025-10-24 21:18:05] [mosquitto.conf] LINE:133: # bind_address ip-address/host name
+[2025-10-24 21:18:05] [mosquitto.conf] LINE:134: #bind_address
+[2025-10-24 21:18:06] [mosquitto.conf] LINE:135: 
+[2025-10-24 21:18:06] [mosquitto.conf] LINE:136: # Port to use for the default listener.
+[2025-10-24 21:18:07] [mosquitto.conf] LINE:137: #port 1883
+[2025-10-24 21:18:07] [mosquitto.conf] LINE:138: 
+[2025-10-24 21:18:08] [mosquitto.conf] LINE:139: # The maximum number of client connections to allow. This is 
+[2025-10-24 21:18:08] [mosquitto.conf] LINE:140: # a per listener setting.
+[2025-10-24 21:18:09] [mosquitto.conf] LINE:141: # Default is -1, which means unlimited connections.
+[2025-10-24 21:18:09] [mosquitto.conf] LINE:142: # Note that other process limits mean that unlimited connections 
+[2025-10-24 21:18:09] [mosquitto.conf] LINE:143: # are not really possible. Typically the default maximum number of 
+[2025-10-24 21:18:10] [mosquitto.conf] LINE:144: # connections possible is around 1024.
+[2025-10-24 21:18:10] [mosquitto.conf] LINE:145: max_connections -1
+[2025-10-24 21:18:11] [mosquitto.conf] LINE:146: 
+[2025-10-24 21:18:11] [mosquitto.conf] LINE:147: # Choose the protocol to use when listening.
+[2025-10-24 21:18:12] [mosquitto.conf] LINE:148: # This can be either mqtt or websockets.
+[2025-10-24 21:18:12] [mosquitto.conf] LINE:149: # Websockets support is currently disabled by default at compile time.
+[2025-10-24 21:18:13] [mosquitto.conf] LINE:150: # Certificate based TLS may be used with websockets, except that
+[2025-10-24 21:18:13] [mosquitto.conf] LINE:151: # only the cafile, certfile, keyfile and ciphers options are supported.
+[2025-10-24 21:18:13] [mosquitto.conf] LINE:152: #protocol mqtt
+[2025-10-24 21:18:14] [mosquitto.conf] LINE:153: 
+[2025-10-24 21:18:14] [mosquitto.conf] LINE:154: # When a listener is using the websockets protocol, it is possible to serve
+[2025-10-24 21:18:15] [mosquitto.conf] LINE:155: # http data as well. Set http_dir to a directory which contains the files you
+[2025-10-24 21:18:15] [mosquitto.conf] LINE:156: # wish to serve. If this option is not specified, then no normal http
+[2025-10-24 21:18:16] [mosquitto.conf] LINE:157: # connections will be possible.
+[2025-10-24 21:18:16] [mosquitto.conf] LINE:158: #http_dir
+[2025-10-24 21:18:17] [mosquitto.conf] LINE:159: 
+[2025-10-24 21:18:17] [mosquitto.conf] LINE:160: # Set use_username_as_clientid to true to replace the clientid that a client
+[2025-10-24 21:18:18] [mosquitto.conf] LINE:161: # connected with with its username. This allows authentication to be tied to
+[2025-10-24 21:18:18] [mosquitto.conf] LINE:162: # the clientid, which means that it is possible to prevent one client
+[2025-10-24 21:18:18] [mosquitto.conf] LINE:163: # disconnecting another by using the same clientid.
+[2025-10-24 21:18:19] [mosquitto.conf] LINE:164: # If a client connects with no username it will be disconnected as not
+[2025-10-24 21:18:19] [mosquitto.conf] LINE:165: # authorised when this option is set to true.
+[2025-10-24 21:18:20] [mosquitto.conf] LINE:166: # Do not use in conjunction with clientid_prefixes.
+[2025-10-24 21:18:20] [mosquitto.conf] LINE:167: # See also use_identity_as_username.
+[2025-10-24 21:18:21] [mosquitto.conf] LINE:168: #use_username_as_clientid
+[2025-10-24 21:18:21] [mosquitto.conf] LINE:169: 
+[2025-10-24 21:18:22] [mosquitto.conf] LINE:170: # -----------------------------------------------------------------
+[2025-10-24 21:18:22] [mosquitto.conf] LINE:171: # Certificate based SSL/TLS support
+[2025-10-24 21:18:23] [mosquitto.conf] LINE:172: # -----------------------------------------------------------------
+[2025-10-24 21:18:23] [mosquitto.conf] LINE:173: # The following options can be used to enable SSL/TLS support for 
+[2025-10-24 21:18:24] [mosquitto.conf] LINE:174: # this listener. Note that the recommended port for MQTT over TLS
+[2025-10-24 21:18:24] [mosquitto.conf] LINE:175: # is 8883, but this must be set manually.
+[2025-10-24 21:18:25] [mosquitto.conf] LINE:176: #
+[2025-10-24 21:18:25] [mosquitto.conf] LINE:177: # See also the mosquitto-tls man page.
+[2025-10-24 21:18:25] [mosquitto.conf] LINE:178: 
+[2025-10-24 21:18:26] [mosquitto.conf] LINE:179: # At least one of cafile or capath must be defined. They both 
+[2025-10-24 21:18:26] [mosquitto.conf] LINE:180: # define methods of accessing the PEM encoded Certificate 
+[2025-10-24 21:18:27] [mosquitto.conf] LINE:181: # Authority certificates that have signed your server certificate 
+[2025-10-24 21:18:27] [mosquitto.conf] LINE:182: # and that you wish to trust.
+[2025-10-24 21:18:28] [mosquitto.conf] LINE:183: # cafile defines the path to a file containing the CA certificates.
+[2025-10-24 21:18:28] [mosquitto.conf] LINE:184: # capath defines a directory that will be searched for files
+[2025-10-24 21:18:29] [mosquitto.conf] LINE:185: # containing the CA certificates. For capath to work correctly, the
+[2025-10-24 21:18:29] [mosquitto.conf] LINE:186: # certificate files must have ".crt" as the file ending and you must run
+[2025-10-24 21:18:30] [mosquitto.conf] LINE:187: # "c_rehash <path to capath>" each time you add/remove a certificate.
+[2025-10-24 21:18:30] [mosquitto.conf] LINE:188: #cafile
+[2025-10-24 21:18:30] [mosquitto.conf] LINE:189: #capath
+[2025-10-24 21:18:31] [mosquitto.conf] LINE:190: 
+[2025-10-24 21:18:31] [mosquitto.conf] LINE:191: # Path to the PEM encoded server certificate.
+[2025-10-24 21:18:32] [mosquitto.conf] LINE:192: #certfile
+[2025-10-24 21:18:32] [mosquitto.conf] LINE:193: 
+[2025-10-24 21:18:33] [mosquitto.conf] LINE:194: # Path to the PEM encoded keyfile.
+[2025-10-24 21:18:33] [mosquitto.conf] LINE:195: #keyfile
+[2025-10-24 21:18:34] [mosquitto.conf] LINE:196: 
+[2025-10-24 21:18:34] [mosquitto.conf] LINE:197: # This option defines the version of the TLS protocol to use for this listener.
+[2025-10-24 21:18:34] [mosquitto.conf] LINE:198: # The default value allows v1.2, v1.1 and v1.0, if they are all supported by
+[2025-10-24 21:18:35] [mosquitto.conf] LINE:199: # the version of openssl that the broker was compiled against. For openssl >=
+[2025-10-24 21:18:35] [mosquitto.conf] LINE:200: # 1.0.1 the valid values are tlsv1.2 tlsv1.1 and tlsv1. For openssl < 1.0.1 the
+[2025-10-24 21:18:36] [mosquitto.conf] LINE:201: # valid values are tlsv1.
+[2025-10-24 21:18:36] [mosquitto.conf] LINE:202: #tls_version
+[2025-10-24 21:18:37] [mosquitto.conf] LINE:203: 
+[2025-10-24 21:18:37] [mosquitto.conf] LINE:204: # By default a TLS enabled listener will operate in a similar fashion to a
+[2025-10-24 21:18:38] [mosquitto.conf] LINE:205: # https enabled web server, in that the server has a certificate signed by a CA
+[2025-10-24 21:18:38] [mosquitto.conf] LINE:206: # and the client will verify that it is a trusted certificate. The overall aim
+[2025-10-24 21:18:39] [mosquitto.conf] LINE:207: # is encryption of the network traffic. By setting require_certificate to true,
+[2025-10-24 21:18:39] [mosquitto.conf] LINE:208: # the client must provide a valid certificate in order for the network
+[2025-10-24 21:18:40] [mosquitto.conf] LINE:209: # connection to proceed. This allows access to the broker to be controlled
+[2025-10-24 21:18:40] [mosquitto.conf] LINE:210: # outside of the mechanisms provided by MQTT.
+[2025-10-24 21:18:41] [mosquitto.conf] LINE:211: #require_certificate false
+[2025-10-24 21:18:41] [mosquitto.conf] LINE:212: 
+[2025-10-24 21:18:41] [mosquitto.conf] LINE:213: # If require_certificate is true, you may set use_identity_as_username to true
+[2025-10-24 21:18:42] [mosquitto.conf] LINE:214: # to use the CN value from the client certificate as a username. If this is
+[2025-10-24 21:18:42] [mosquitto.conf] LINE:215: # true, the password_file option will not be used for this listener.
+[2025-10-24 21:18:43] [mosquitto.conf] LINE:216: #use_identity_as_username false
+[2025-10-24 21:18:43] [mosquitto.conf] LINE:217: 
+[2025-10-24 21:18:44] [mosquitto.conf] LINE:218: # If you have require_certificate set to true, you can create a certificate
+[2025-10-24 21:18:44] [mosquitto.conf] LINE:219: # revocation list file to revoke access to particular client certificates. If
+[2025-10-24 21:18:45] [mosquitto.conf] LINE:220: # you have done this, use crlfile to point to the PEM encoded revocation file.
+[2025-10-24 21:18:45] [mosquitto.conf] LINE:221: #crlfile
+[2025-10-24 21:18:46] [mosquitto.conf] LINE:222: 
+[2025-10-24 21:18:46] [mosquitto.conf] LINE:223: # If you wish to control which encryption ciphers are used, use the ciphers
+[2025-10-24 21:18:47] [mosquitto.conf] LINE:224: # option. The list of available ciphers can be optained using the "openssl
+[2025-10-24 21:18:47] [mosquitto.conf] LINE:225: # ciphers" command and should be provided in the same format as the output of
+[2025-10-24 21:18:48] [mosquitto.conf] LINE:226: # that command.
+[2025-10-24 21:18:48] [mosquitto.conf] LINE:227: # If unset defaults to DEFAULT:!aNULL:!eNULL:!LOW:!EXPORT:!SSLv2:@STRENGTH
+[2025-10-24 21:18:48] [mosquitto.conf] LINE:228: #ciphers DEFAULT:!aNULL:!eNULL:!LOW:!EXPORT:!SSLv2:@STRENGTH
+[2025-10-24 21:18:49] [mosquitto.conf] LINE:229: 
+[2025-10-24 21:18:49] [mosquitto.conf] LINE:230: # -----------------------------------------------------------------
+[2025-10-24 21:18:50] [mosquitto.conf] LINE:231: # Pre-shared-key based SSL/TLS support
+[2025-10-24 21:18:50] [mosquitto.conf] LINE:232: # -----------------------------------------------------------------
+[2025-10-24 21:18:51] [mosquitto.conf] LINE:233: # The following options can be used to enable PSK based SSL/TLS support for
+[2025-10-24 21:18:59] FILE_START: product.cfg (path: /pref/product.cfg)
+[2025-10-24 21:19:00] [product.cfg] LINE:1: ### read only ###
+[2025-10-24 21:19:00] [product.cfg] LINE:2: BRAND=Drift
+[2025-10-24 21:19:00] [product.cfg] LINE:3: MODEL=GHOST X
+[2025-10-24 21:19:00] [product.cfg] LINE:4: 
+[2025-10-24 21:19:00] [product.cfg] LINE:5: ################################################
+[2025-10-24 21:19:01] [product.cfg] LINE:6: 
+[2025-10-24 21:19:01] [product.cfg] LINE:7: wifi_on=1
+[2025-10-24 21:19:01] [product.cfg] LINE:8: Fn=setting
+[2025-10-24 21:19:01] [product.cfg] LINE:9: auto_off=0
+[2025-10-24 21:19:01] [product.cfg] LINE:10: lang=en
+[2025-10-24 21:19:02] [product.cfg] LINE:11: photo_tl=0
+[2025-10-24 21:19:02] [product.cfg] LINE:12: caf=1
+[2025-10-24 21:19:02] [product.cfg] LINE:13: hdmi_osd=1
+[2025-10-24 21:19:02] [product.cfg] LINE:14: F2=onoff_lcd
+[2025-10-24 21:19:02] [product.cfg] LINE:15: photo_tl_interval=5
+[2025-10-24 21:19:02] [product.cfg] LINE:16: photo_tl_num=100
+[2025-10-24 21:19:03] [product.cfg] LINE:17: drive_mode=single
+[2025-10-24 21:19:03] [product.cfg] LINE:18: 
+[2025-10-24 21:19:03] [product.cfg] LINE:19: ##################################################################
+[2025-10-24 21:19:03] [product.cfg] LINE:20: AP_SSID=Cam
+[2025-10-24 21:19:03] [product.cfg] LINE:21: AP_PASSWD=1234567890
+[2025-10-24 21:19:04] [product.cfg] LINE:22: # IP address
+[2025-10-24 21:19:04] [product.cfg] LINE:23: LOCAL_IP=192.168.42.1
+[2025-10-24 21:19:04] [product.cfg] LINE:24: # IP subnet mask
+[2025-10-24 21:19:04] [product.cfg] LINE:25: LOCAL_NETMASK=255.255.255.0
+[2025-10-24 21:19:04] [product.cfg] LINE:26: # IP pool starting address of DHCP server
+[2025-10-24 21:19:05] [product.cfg] LINE:27: DHCP_IP_START=192.168.42.2
+[2025-10-24 21:19:05] [product.cfg] LINE:28: # IP pool end address of DHCP server
+[2025-10-24 21:19:05] [product.cfg] LINE:29: DHCP_IP_END=192.168.42.21
+[2025-10-24 21:19:05] [product.cfg] LINE:30: # Wifi channel number, set 0 to use Auto Channel Selection
+[2025-10-24 21:19:05] [product.cfg] LINE:31: AP_CHANNEL=0
+[2025-10-24 21:19:06] [product.cfg] LINE:32: # Maximum number of stations allowed in station table
+[2025-10-24 21:22:47] FILE_START: product.cfg (path: /pref/product.cfg)
+[2025-10-24 21:22:47] [product.cfg] LINE:1: ### read only ###
+[2025-10-24 21:22:48] [product.cfg] LINE:2: BRAND=Drift
+[2025-10-24 21:22:48] [product.cfg] LINE:3: MODEL=GHOST X
+[2025-10-24 21:22:48] [product.cfg] LINE:4: 
+[2025-10-24 21:22:49] [product.cfg] LINE:5: ################################################
+[2025-10-24 21:22:49] [product.cfg] LINE:6: 
+[2025-10-24 21:22:49] [product.cfg] LINE:7: wifi_on=1
+[2025-10-24 21:22:50] [product.cfg] LINE:8: Fn=setting
+[2025-10-24 21:22:50] [product.cfg] LINE:9: auto_off=0
+[2025-10-24 21:22:50] [product.cfg] LINE:10: lang=en
+[2025-10-24 21:22:50] [product.cfg] LINE:11: photo_tl=0
+[2025-10-24 21:22:51] [product.cfg] LINE:12: caf=1
+[2025-10-24 21:22:51] [product.cfg] LINE:13: hdmi_osd=1
+[2025-10-24 21:22:51] [product.cfg] LINE:14: F2=onoff_lcd
+[2025-10-24 21:22:52] [product.cfg] LINE:15: photo_tl_interval=5
+[2025-10-24 21:22:52] [product.cfg] LINE:16: photo_tl_num=100
+[2025-10-24 21:22:52] [product.cfg] LINE:17: drive_mode=single
+[2025-10-24 21:22:52] [product.cfg] LINE:18: 
+[2025-10-24 21:22:53] [product.cfg] LINE:19: ##################################################################
+[2025-10-24 21:22:53] [product.cfg] LINE:20: AP_SSID=Cam
+[2025-10-24 21:22:53] [product.cfg] LINE:21: AP_PASSWD=1234567890
+[2025-10-24 21:22:54] [product.cfg] LINE:22: # IP address
+[2025-10-24 21:22:54] [product.cfg] LINE:23: LOCAL_IP=192.168.42.1
+[2025-10-24 21:22:54] [product.cfg] LINE:24: # IP subnet mask
+[2025-10-24 21:22:54] [product.cfg] LINE:25: LOCAL_NETMASK=255.255.255.0
+[2025-10-24 21:22:55] [product.cfg] LINE:26: # IP pool starting address of DHCP server
+[2025-10-24 21:22:55] [product.cfg] LINE:27: DHCP_IP_START=192.168.42.2
+[2025-10-24 21:22:55] [product.cfg] LINE:28: # IP pool end address of DHCP server
+[2025-10-24 21:22:56] [product.cfg] LINE:29: DHCP_IP_END=192.168.42.21
+[2025-10-24 21:22:56] [product.cfg] LINE:30: # Wifi channel number, set 0 to use Auto Channel Selection
+[2025-10-24 21:22:56] [product.cfg] LINE:31: AP_CHANNEL=0
+[2025-10-24 21:22:57] [product.cfg] LINE:32: # Maximum number of stations allowed in station table
+[2025-10-24 21:22:57] [product.cfg] LINE:33: AP_MAXSTA=20
+[2025-10-24 21:22:57] [product.cfg] LINE:34: # If you say yes here, all WPA/WEP settings will be ignored
+[2025-10-24 21:22:57] [product.cfg] LINE:35: AP_PUBLIC=no
+[2025-10-24 21:22:58] [product.cfg] LINE:36: # WPA Passphrase (8 ~ 63 characters)
+[2025-10-24 21:22:58] FILE_END: product.cfg (sent 36/36 lines)
+[2025-10-24 21:22:59] FILE_START: mosquitto.conf (path: /pref/mosquitto.conf)
+[2025-10-24 21:23:00] [mosquitto.conf] LINE:1: # Config file for mosquitto
+[2025-10-24 21:23:00] [mosquitto.conf] LINE:2: #
+[2025-10-24 21:23:01] [mosquitto.conf] LINE:3: # See mosquitto.conf(5) for more information.
+[2025-10-24 21:23:01] [mosquitto.conf] LINE:4: #
+[2025-10-24 21:23:01] [mosquitto.conf] LINE:5: # Default values are shown, uncomment to change.
+[2025-10-24 21:23:02] [mosquitto.conf] LINE:6: #
+[2025-10-24 21:23:02] [mosquitto.conf] LINE:7: # Use the # character to indicate a comment, but only if it is the 
+[2025-10-24 21:23:02] [mosquitto.conf] LINE:8: # very first character on the line.
+[2025-10-24 21:23:02] [mosquitto.conf] LINE:9: 
+[2025-10-24 21:23:03] [mosquitto.conf] LINE:10: # =================================================================
+[2025-10-24 21:23:03] [mosquitto.conf] LINE:11: # General configuration
+[2025-10-24 21:23:03] [mosquitto.conf] LINE:12: # =================================================================
+[2025-10-24 21:23:04] [mosquitto.conf] LINE:13: 
+[2025-10-24 21:23:04] [mosquitto.conf] LINE:14: # Time in seconds to wait before resending an outgoing QoS=1 or 
+[2025-10-24 21:23:04] [mosquitto.conf] LINE:15: # QoS=2 message.
+[2025-10-24 21:23:05] [mosquitto.conf] LINE:16: #retry_interval 20
+[2025-10-24 21:23:05] [mosquitto.conf] LINE:17: 
+[2025-10-24 21:23:05] [mosquitto.conf] LINE:18: # Time in seconds between updates of the $SYS tree.
+[2025-10-24 21:23:05] [mosquitto.conf] LINE:19: # Set to 0 to disable the publishing of the $SYS tree.
+[2025-10-24 21:23:06] [mosquitto.conf] LINE:20: #sys_interval 10
+[2025-10-24 21:23:06] [mosquitto.conf] LINE:21: 
+[2025-10-24 21:23:06] [mosquitto.conf] LINE:22: # Time in seconds between cleaning the internal message store of 
+[2025-10-24 21:23:07] [mosquitto.conf] LINE:23: # unreferenced messages. Lower values will result in lower memory 
+[2025-10-24 21:23:07] [mosquitto.conf] LINE:24: # usage but more processor time, higher values will have the 
+[2025-10-24 21:23:07] [mosquitto.conf] LINE:25: # opposite effect.
+[2025-10-24 21:23:08] [mosquitto.conf] LINE:26: # Setting a value of 0 means the unreferenced messages will be 
+[2025-10-24 21:23:08] [mosquitto.conf] LINE:27: # disposed of as quickly as possible.
+[2025-10-24 21:23:08] [mosquitto.conf] LINE:28: #store_clean_interval 10
+[2025-10-24 21:23:09] [mosquitto.conf] LINE:29: 
+[2025-10-24 21:23:09] [mosquitto.conf] LINE:30: # Write process id to a file. Default is a blank string which means 
+[2025-10-24 21:23:09] [mosquitto.conf] LINE:31: # a pid file shouldn't be written.
+[2025-10-24 21:23:09] [mosquitto.conf] LINE:32: # This should be set to /var/run/mosquitto.pid if mosquitto is
+[2025-10-24 21:23:10] [mosquitto.conf] LINE:33: # being run automatically on boot with an init script and 
+[2025-10-24 21:23:10] [mosquitto.conf] LINE:34: # start-stop-daemon or similar.
+[2025-10-24 21:23:10] [mosquitto.conf] LINE:35: #pid_file
+[2025-10-24 21:23:11] [mosquitto.conf] LINE:36: 
+[2025-10-24 21:23:11] [mosquitto.conf] LINE:37: # When run as root, drop privileges to this user and its primary 
+[2025-10-24 21:23:11] [mosquitto.conf] LINE:38: # group.
+[2025-10-24 21:23:11] [mosquitto.conf] LINE:39: # Leave blank to stay as root, but this is not recommended.
+[2025-10-24 21:23:12] [mosquitto.conf] LINE:40: # If run as a non-root user, this setting has no effect.
+[2025-10-24 21:23:12] [mosquitto.conf] LINE:41: # Note that on Windows this has no effect and so mosquitto should 
+[2025-10-24 21:23:12] [mosquitto.conf] LINE:42: # be started by the user you wish it to run as.
+[2025-10-24 21:23:13] [mosquitto.conf] LINE:43: #user mosquitto
+[2025-10-24 21:23:13] [mosquitto.conf] LINE:44: user root
+[2025-10-24 21:23:13] [mosquitto.conf] LINE:45: 
+[2025-10-24 21:23:13] [mosquitto.conf] LINE:46: # The maximum number of QoS 1 and 2 messages currently inflight per 
+[2025-10-24 21:23:14] [mosquitto.conf] LINE:47: # client.
+[2025-10-24 21:23:14] [mosquitto.conf] LINE:48: # This includes messages that are partway through handshakes and 
+[2025-10-24 21:23:14] [mosquitto.conf] LINE:49: # those that are being retried. Defaults to 20. Set to 0 for no 
+[2025-10-24 21:23:15] [mosquitto.conf] LINE:50: # maximum. Setting to 1 will guarantee in-order delivery of QoS 1 
+[2025-10-24 21:23:15] [mosquitto.conf] LINE:51: # and 2 messages.
+[2025-10-24 21:23:15] [mosquitto.conf] LINE:52: #max_inflight_messages 20
+[2025-10-24 21:23:16] [mosquitto.conf] LINE:53: 
+[2025-10-24 21:23:16] [mosquitto.conf] LINE:54: # The maximum number of QoS 1 and 2 messages to hold in a queue 
+[2025-10-24 21:23:16] [mosquitto.conf] LINE:55: # above those that are currently in-flight.  Defaults to 100. Set 
+[2025-10-24 21:23:16] [mosquitto.conf] LINE:56: # to 0 for no maximum (not recommended).
+[2025-10-24 21:23:17] [mosquitto.conf] LINE:57: # See also queue_qos0_messages.
+[2025-10-24 21:23:17] [mosquitto.conf] LINE:58: #max_queued_messages 100
+[2025-10-24 21:23:17] [mosquitto.conf] LINE:59: 
+[2025-10-24 21:23:18] [mosquitto.conf] LINE:60: # Set to true to queue messages with QoS 0 when a persistent client is
+[2025-10-24 21:23:18] [mosquitto.conf] LINE:61: # disconnected. These messages are included in the limit imposed by
+[2025-10-24 21:23:18] [mosquitto.conf] LINE:62: # max_queued_messages.
+[2025-10-24 21:23:18] [mosquitto.conf] LINE:63: # Defaults to false.
+[2025-10-24 21:23:19] [mosquitto.conf] LINE:64: # This is a non-standard option for the MQTT v3.1 spec but is allowed in
+[2025-10-24 21:23:19] [mosquitto.conf] LINE:65: # v3.1.1.
+[2025-10-24 21:23:19] [mosquitto.conf] LINE:66: #queue_qos0_messages false
+[2025-10-24 21:23:20] [mosquitto.conf] LINE:67: 
+[2025-10-24 21:23:20] [mosquitto.conf] LINE:68: # This option sets the maximum publish payload size that the broker will allow.
+[2025-10-24 21:23:20] [mosquitto.conf] LINE:69: # Received messages that exceed this size will not be accepted by the broker.
+[2025-10-24 21:23:20] [mosquitto.conf] LINE:70: # The default value is 0, which means that all valid MQTT messages are
+[2025-10-24 21:23:21] [mosquitto.conf] LINE:71: # accepted. MQTT imposes a maximum payload size of 268435455 bytes. 
+[2025-10-24 21:23:21] [mosquitto.conf] LINE:72: #message_size_limit 0
+[2025-10-24 21:23:21] [mosquitto.conf] LINE:73: 
+[2025-10-24 21:23:22] [mosquitto.conf] LINE:74: # This option controls whether a client is allowed to connect with a zero
+[2025-10-24 21:23:22] [mosquitto.conf] LINE:75: # length client id or not. This option only affects clients using MQTT v3.1.1
+[2025-10-24 21:23:22] [mosquitto.conf] LINE:76: # and later. If set to false, clients connecting with a zero length client id
+[2025-10-24 21:23:22] [mosquitto.conf] LINE:77: # are disconnected. If set to true, clients will be allocated a client id by
+[2025-10-24 21:23:23] [mosquitto.conf] LINE:78: # the broker. This means it is only useful for clients with clean session set
+[2025-10-24 21:23:23] [mosquitto.conf] LINE:79: # to true.
+[2025-10-24 21:23:23] [mosquitto.conf] LINE:80: allow_zero_length_clientid false
+[2025-10-24 21:23:24] [mosquitto.conf] LINE:81: 
+[2025-10-24 21:23:24] [mosquitto.conf] LINE:82: # If allow_zero_length_clientid is true, this option allows you to set a prefix
+[2025-10-24 21:23:24] [mosquitto.conf] LINE:83: # to automatically generated client ids to aid visibility in logs.
+[2025-10-24 21:23:25] [mosquitto.conf] LINE:84: #auto_id_prefix
+[2025-10-24 21:23:25] [mosquitto.conf] LINE:85: 
+[2025-10-24 21:23:25] [mosquitto.conf] LINE:86: # This option allows persistent clients (those with clean session set to false)
+[2025-10-24 21:23:25] [mosquitto.conf] LINE:87: # to be removed if they do not reconnect within a certain time frame.
+[2025-10-24 21:23:26] [mosquitto.conf] LINE:88: #
+[2025-10-24 21:23:26] [mosquitto.conf] LINE:89: # This is a non-standard option in MQTT V3.1 but allowed in MQTT v3.1.1.
+[2025-10-24 21:23:26] [mosquitto.conf] LINE:90: #
+[2025-10-24 21:23:27] [mosquitto.conf] LINE:91: # Badly designed clients may set clean session to false whilst using a randomly
+[2025-10-24 21:23:27] [mosquitto.conf] LINE:92: # generated client id. This leads to persistent clients that will never
+[2025-10-24 21:23:27] [mosquitto.conf] LINE:93: # reconnect. This option allows these clients to be removed.
+[2025-10-24 21:23:27] [mosquitto.conf] LINE:94: #
+[2025-10-24 21:23:28] [mosquitto.conf] LINE:95: # The expiration period should be an integer followed by one of h d w m y for
+[2025-10-24 21:23:28] [mosquitto.conf] LINE:96: # hour, day, week, month and year respectively. For example
+[2025-10-24 21:23:28] [mosquitto.conf] LINE:97: #
+[2025-10-24 21:23:29] [mosquitto.conf] LINE:98: # persistent_client_expiration 2m
+[2025-10-24 21:23:29] [mosquitto.conf] LINE:99: # persistent_client_expiration 14d
+[2025-10-24 21:23:29] [mosquitto.conf] LINE:100: # persistent_client_expiration 1y
+[2025-10-24 21:23:29] [mosquitto.conf] LINE:101: #
+[2025-10-24 21:23:30] [mosquitto.conf] LINE:102: # The default if not set is to never expire persistent clients.
+[2025-10-24 21:23:30] [mosquitto.conf] LINE:103: persistent_client_expiration 1d
+[2025-10-24 21:23:30] [mosquitto.conf] LINE:104: 
+[2025-10-24 21:23:31] [mosquitto.conf] LINE:105: # If a client is subscribed to multiple subscriptions that overlap, e.g. foo/#
+[2025-10-24 21:23:31] [mosquitto.conf] LINE:106: # and foo/+/baz , then MQTT expects that when the broker receives a message on
+[2025-10-24 21:23:31] [mosquitto.conf] LINE:107: # a topic that matches both subscriptions, such as foo/bar/baz, then the client
+[2025-10-24 21:23:32] [mosquitto.conf] LINE:108: # should only receive the message once.
+[2025-10-24 21:23:32] [mosquitto.conf] LINE:109: # Mosquitto keeps track of which clients a message has been sent to in order to
+[2025-10-24 21:23:32] [mosquitto.conf] LINE:110: # meet this requirement. The allow_duplicate_messages option allows this
+[2025-10-24 21:23:32] [mosquitto.conf] LINE:111: # behaviour to be disabled, which may be useful if you have a large number of
+[2025-10-24 21:23:33] [mosquitto.conf] LINE:112: # clients subscribed to the same set of topics and are very concerned about
+[2025-10-24 21:23:33] [mosquitto.conf] LINE:113: # minimising memory usage.
+[2025-10-24 21:23:33] [mosquitto.conf] LINE:114: # It can be safely set to true if you know in advance that your clients will
+[2025-10-24 21:23:33] [mosquitto.conf] LINE:115: # never have overlapping subscriptions, otherwise your clients must be able to
+[2025-10-24 21:23:34] [mosquitto.conf] LINE:116: # correctly deal with duplicate messages even when then have QoS=2.
+[2025-10-24 21:23:34] [mosquitto.conf] LINE:117: #allow_duplicate_messages false
+[2025-10-24 21:23:34] [mosquitto.conf] LINE:118: 
+[2025-10-24 21:23:35] [mosquitto.conf] LINE:119: # The MQTT specification requires that the QoS of a message delivered to a
+[2025-10-24 21:23:35] [mosquitto.conf] LINE:120: # subscriber is never upgraded to match the QoS of the subscription. Enabling
+[2025-10-24 21:23:35] [mosquitto.conf] LINE:121: # this option changes this behaviour. If upgrade_outgoing_qos is set true,
+[2025-10-24 21:23:35] [mosquitto.conf] LINE:122: # messages sent to a subscriber will always match the QoS of its subscription.
+[2025-10-24 21:23:36] [mosquitto.conf] LINE:123: # This is a non-standard option explicitly disallowed by the spec.
+[2025-10-24 21:23:36] [mosquitto.conf] LINE:124: #upgrade_outgoing_qos false
+[2025-10-24 21:23:36] [mosquitto.conf] LINE:125: 
+[2025-10-24 21:23:37] [mosquitto.conf] LINE:126: # =================================================================
+[2025-10-24 21:23:37] [mosquitto.conf] LINE:127: # Default listener
+[2025-10-24 21:23:37] [mosquitto.conf] LINE:128: # =================================================================
+[2025-10-24 21:23:38] [mosquitto.conf] LINE:129: 
+[2025-10-24 21:23:38] [mosquitto.conf] LINE:130: # IP address/hostname to bind the default listener to. If not
+[2025-10-24 21:23:38] [mosquitto.conf] LINE:131: # given, the default listener will not be bound to a specific 
+[2025-10-24 21:23:38] [mosquitto.conf] LINE:132: # address and so will be accessible to all network interfaces.
+[2025-10-24 21:23:39] [mosquitto.conf] LINE:133: # bind_address ip-address/host name
+[2025-10-24 21:23:39] [mosquitto.conf] LINE:134: #bind_address
+[2025-10-24 21:23:39] [mosquitto.conf] LINE:135: 
+[2025-10-24 21:23:40] [mosquitto.conf] LINE:136: # Port to use for the default listener.
+[2025-10-24 21:23:40] [mosquitto.conf] LINE:137: #port 1883
+[2025-10-24 21:23:40] [mosquitto.conf] LINE:138: 
+[2025-10-24 21:23:40] [mosquitto.conf] LINE:139: # The maximum number of client connections to allow. This is 
+[2025-10-24 21:23:41] [mosquitto.conf] LINE:140: # a per listener setting.
+[2025-10-24 21:23:41] [mosquitto.conf] LINE:141: # Default is -1, which means unlimited connections.
+[2025-10-24 21:23:41] [mosquitto.conf] LINE:142: # Note that other process limits mean that unlimited connections 
+[2025-10-24 21:23:42] [mosquitto.conf] LINE:143: # are not really possible. Typically the default maximum number of 
+[2025-10-24 21:23:42] [mosquitto.conf] LINE:144: # connections possible is around 1024.
+[2025-10-24 21:23:42] [mosquitto.conf] LINE:145: max_connections -1
+[2025-10-24 21:23:42] [mosquitto.conf] LINE:146: 
+[2025-10-24 21:23:43] [mosquitto.conf] LINE:147: # Choose the protocol to use when listening.
+[2025-10-24 21:23:43] [mosquitto.conf] LINE:148: # This can be either mqtt or websockets.
+[2025-10-24 21:23:43] [mosquitto.conf] LINE:149: # Websockets support is currently disabled by default at compile time.
+[2025-10-24 21:23:44] [mosquitto.conf] LINE:150: # Certificate based TLS may be used with websockets, except that
+[2025-10-24 21:23:44] [mosquitto.conf] LINE:151: # only the cafile, certfile, keyfile and ciphers options are supported.
+[2025-10-24 21:23:44] [mosquitto.conf] LINE:152: #protocol mqtt
+[2025-10-24 21:23:44] [mosquitto.conf] LINE:153: 
+[2025-10-24 21:23:45] [mosquitto.conf] LINE:154: # When a listener is using the websockets protocol, it is possible to serve
+[2025-10-24 21:23:45] [mosquitto.conf] LINE:155: # http data as well. Set http_dir to a directory which contains the files you
+[2025-10-24 21:23:45] [mosquitto.conf] LINE:156: # wish to serve. If this option is not specified, then no normal http
+[2025-10-24 21:23:46] [mosquitto.conf] LINE:157: # connections will be possible.
+[2025-10-24 21:23:46] [mosquitto.conf] LINE:158: #http_dir
+[2025-10-24 21:23:46] [mosquitto.conf] LINE:159: 
+[2025-10-24 21:23:46] [mosquitto.conf] LINE:160: # Set use_username_as_clientid to true to replace the clientid that a client
+[2025-10-24 21:23:47] [mosquitto.conf] LINE:161: # connected with with its username. This allows authentication to be tied to
+[2025-10-24 21:23:47] [mosquitto.conf] LINE:162: # the clientid, which means that it is possible to prevent one client
+[2025-10-24 21:23:47] [mosquitto.conf] LINE:163: # disconnecting another by using the same clientid.
+[2025-10-24 21:23:48] [mosquitto.conf] LINE:164: # If a client connects with no username it will be disconnected as not
+[2025-10-24 21:23:48] [mosquitto.conf] LINE:165: # authorised when this option is set to true.
+[2025-10-24 21:23:48] [mosquitto.conf] LINE:166: # Do not use in conjunction with clientid_prefixes.
+[2025-10-24 21:23:48] [mosquitto.conf] LINE:167: # See also use_identity_as_username.
+[2025-10-24 21:23:49] [mosquitto.conf] LINE:168: #use_username_as_clientid
+[2025-10-24 21:23:49] [mosquitto.conf] LINE:169: 
+[2025-10-24 21:23:49] [mosquitto.conf] LINE:170: # -----------------------------------------------------------------
+[2025-10-24 21:23:50] [mosquitto.conf] LINE:171: # Certificate based SSL/TLS support
+[2025-10-24 21:23:50] [mosquitto.conf] LINE:172: # -----------------------------------------------------------------
+[2025-10-24 21:23:50] [mosquitto.conf] LINE:173: # The following options can be used to enable SSL/TLS support for 
+[2025-10-24 21:23:51] [mosquitto.conf] LINE:174: # this listener. Note that the recommended port for MQTT over TLS
+[2025-10-24 21:23:51] [mosquitto.conf] LINE:175: # is 8883, but this must be set manually.
+[2025-10-24 21:23:51] [mosquitto.conf] LINE:176: #
+[2025-10-24 21:23:51] [mosquitto.conf] LINE:177: # See also the mosquitto-tls man page.
+[2025-10-24 21:23:52] [mosquitto.conf] LINE:178: 
+[2025-10-24 21:23:52] [mosquitto.conf] LINE:179: # At least one of cafile or capath must be defined. They both 
+[2025-10-24 21:23:52] [mosquitto.conf] LINE:180: # define methods of accessing the PEM encoded Certificate 
+[2025-10-24 21:23:53] [mosquitto.conf] LINE:181: # Authority certificates that have signed your server certificate 
+[2025-10-24 21:23:53] [mosquitto.conf] LINE:182: # and that you wish to trust.
+[2025-10-24 21:23:53] [mosquitto.conf] LINE:183: # cafile defines the path to a file containing the CA certificates.
+[2025-10-24 21:23:53] [mosquitto.conf] LINE:184: # capath defines a directory that will be searched for files
+[2025-10-24 21:23:54] [mosquitto.conf] LINE:185: # containing the CA certificates. For capath to work correctly, the
+[2025-10-24 21:23:54] [mosquitto.conf] LINE:186: # certificate files must have ".crt" as the file ending and you must run
+[2025-10-24 21:23:54] [mosquitto.conf] LINE:187: # "c_rehash <path to capath>" each time you add/remove a certificate.
+[2025-10-24 21:23:55] [mosquitto.conf] LINE:188: #cafile
+[2025-10-24 21:23:55] [mosquitto.conf] LINE:189: #capath
+[2025-10-24 21:23:55] [mosquitto.conf] LINE:190: 
+[2025-10-24 21:23:55] [mosquitto.conf] LINE:191: # Path to the PEM encoded server certificate.
+[2025-10-24 21:23:56] [mosquitto.conf] LINE:192: #certfile
+[2025-10-24 21:23:56] [mosquitto.conf] LINE:193: 
+[2025-10-24 21:23:56] [mosquitto.conf] LINE:194: # Path to the PEM encoded keyfile.
+[2025-10-24 21:23:57] [mosquitto.conf] LINE:195: #keyfile
+[2025-10-24 21:23:57] [mosquitto.conf] LINE:196: 
+[2025-10-24 21:23:57] [mosquitto.conf] LINE:197: # This option defines the version of the TLS protocol to use for this listener.
+[2025-10-24 21:23:58] [mosquitto.conf] LINE:198: # The default value allows v1.2, v1.1 and v1.0, if they are all supported by
+[2025-10-24 21:23:58] [mosquitto.conf] LINE:199: # the version of openssl that the broker was compiled against. For openssl >=
+[2025-10-24 21:23:58] [mosquitto.conf] LINE:200: # 1.0.1 the valid values are tlsv1.2 tlsv1.1 and tlsv1. For openssl < 1.0.1 the
+[2025-10-24 21:23:58] [mosquitto.conf] LINE:201: # valid values are tlsv1.
+[2025-10-24 21:23:59] [mosquitto.conf] LINE:202: #tls_version
+[2025-10-24 21:23:59] [mosquitto.conf] LINE:203: 
+[2025-10-24 21:23:59] [mosquitto.conf] LINE:204: # By default a TLS enabled listener will operate in a similar fashion to a
+[2025-10-24 21:24:00] [mosquitto.conf] LINE:205: # https enabled web server, in that the server has a certificate signed by a CA
+[2025-10-24 21:24:00] [mosquitto.conf] LINE:206: # and the client will verify that it is a trusted certificate. The overall aim
+[2025-10-24 21:24:00] [mosquitto.conf] LINE:207: # is encryption of the network traffic. By setting require_certificate to true,
+[2025-10-24 21:24:00] [mosquitto.conf] LINE:208: # the client must provide a valid certificate in order for the network
+[2025-10-24 21:24:01] [mosquitto.conf] LINE:209: # connection to proceed. This allows access to the broker to be controlled
+[2025-10-24 21:24:01] [mosquitto.conf] LINE:210: # outside of the mechanisms provided by MQTT.
+[2025-10-24 21:24:01] [mosquitto.conf] LINE:211: #require_certificate false
+[2025-10-24 21:24:02] [mosquitto.conf] LINE:212: 
+[2025-10-24 21:24:02] [mosquitto.conf] LINE:213: # If require_certificate is true, you may set use_identity_as_username to true
+[2025-10-24 21:24:02] [mosquitto.conf] LINE:214: # to use the CN value from the client certificate as a username. If this is
+[2025-10-24 21:24:02] [mosquitto.conf] LINE:215: # true, the password_file option will not be used for this listener.
+[2025-10-24 21:24:03] [mosquitto.conf] LINE:216: #use_identity_as_username false
+[2025-10-24 21:24:03] [mosquitto.conf] LINE:217: 
+[2025-10-24 21:24:03] [mosquitto.conf] LINE:218: # If you have require_certificate set to true, you can create a certificate
+[2025-10-24 21:24:04] [mosquitto.conf] LINE:219: # revocation list file to revoke access to particular client certificates. If
+[2025-10-24 21:24:04] [mosquitto.conf] LINE:220: # you have done this, use crlfile to point to the PEM encoded revocation file.
+[2025-10-24 21:24:04] [mosquitto.conf] LINE:221: #crlfile
+[2025-10-24 21:24:05] [mosquitto.conf] LINE:222: 
+[2025-10-24 21:24:05] [mosquitto.conf] LINE:223: # If you wish to control which encryption ciphers are used, use the ciphers
+[2025-10-24 21:24:05] [mosquitto.conf] LINE:224: # option. The list of available ciphers can be optained using the "openssl
+[2025-10-24 21:24:05] [mosquitto.conf] LINE:225: # ciphers" command and should be provided in the same format as the output of
+[2025-10-24 21:24:06] [mosquitto.conf] LINE:226: # that command.
+[2025-10-24 21:24:06] [mosquitto.conf] LINE:227: # If unset defaults to DEFAULT:!aNULL:!eNULL:!LOW:!EXPORT:!SSLv2:@STRENGTH
+[2025-10-24 21:24:06] [mosquitto.conf] LINE:228: #ciphers DEFAULT:!aNULL:!eNULL:!LOW:!EXPORT:!SSLv2:@STRENGTH
+[2025-10-24 21:24:06] [mosquitto.conf] LINE:229: 
+[2025-10-24 21:24:07] [mosquitto.conf] LINE:230: # -----------------------------------------------------------------
+[2025-10-24 21:24:07] [mosquitto.conf] LINE:231: # Pre-shared-key based SSL/TLS support
+[2025-10-24 21:24:07] [mosquitto.conf] LINE:232: # -----------------------------------------------------------------
+[2025-10-24 21:24:08] [mosquitto.conf] LINE:233: # The following options can be used to enable PSK based SSL/TLS support for
+[2025-10-24 21:24:08] [mosquitto.conf] LINE:234: # this listener. Note that the recommended port for MQTT over TLS is 8883, but
+[2025-10-24 21:24:08] [mosquitto.conf] LINE:235: # this must be set manually.
+[2025-10-24 21:24:09] [mosquitto.conf] LINE:236: #
+[2025-10-24 21:24:09] [mosquitto.conf] LINE:237: # See also the mosquitto-tls man page and the "Certificate based SSL/TLS
+[2025-10-24 21:24:09] [mosquitto.conf] LINE:238: # support" section. Only one of certificate or PSK encryption support can be
+[2025-10-24 21:24:09] [mosquitto.conf] LINE:239: # enabled for any listener.
+[2025-10-24 21:24:10] [mosquitto.conf] LINE:240: 
+[2025-10-24 21:24:10] [mosquitto.conf] LINE:241: # The psk_hint option enables pre-shared-key support for this listener and also
+[2025-10-24 21:24:10] [mosquitto.conf] LINE:242: # acts as an identifier for this listener. The hint is sent to clients and may
+[2025-10-24 21:24:11] [mosquitto.conf] LINE:243: # be used locally to aid authentication. The hint is a free form string that
+[2025-10-24 21:24:11] [mosquitto.conf] LINE:244: # doesn't have much meaning in itself, so feel free to be creative.
+[2025-10-24 21:24:11] [mosquitto.conf] LINE:245: # If this option is provided, see psk_file to define the pre-shared keys to be
+[2025-10-24 21:24:11] [mosquitto.conf] LINE:246: # used or create a security plugin to handle them.
+[2025-10-24 21:24:12] [mosquitto.conf] LINE:247: #psk_hint
+[2025-10-24 21:24:12] [mosquitto.conf] LINE:248: 
+[2025-10-24 21:24:12] [mosquitto.conf] LINE:249: # Set use_identity_as_username to have the psk identity sent by the client used
+[2025-10-24 21:24:13] [mosquitto.conf] LINE:250: # as its username. Authentication will be carried out using the PSK rather than
+[2025-10-24 21:24:13] [mosquitto.conf] LINE:251: # the MQTT username/password and so password_file will not be used for this
+[2025-10-24 21:24:13] [mosquitto.conf] LINE:252: # listener.
+[2025-10-24 21:24:14] [mosquitto.conf] LINE:253: #use_identity_as_username false
+[2025-10-24 21:24:14] [mosquitto.conf] LINE:254: 
+[2025-10-24 21:24:14] [mosquitto.conf] LINE:255: # When using PSK, the encryption ciphers used will be chosen from the list of
+[2025-10-24 21:24:14] [mosquitto.conf] LINE:256: # available PSK ciphers. If you want to control which ciphers are available,
+[2025-10-24 21:24:15] [mosquitto.conf] LINE:257: # use the "ciphers" option.  The list of available ciphers can be optained
+[2025-10-24 21:24:15] [mosquitto.conf] LINE:258: # using the "openssl ciphers" command and should be provided in the same format
+[2025-10-24 21:24:15] [mosquitto.conf] LINE:259: # as the output of that command.
+[2025-10-24 21:24:16] [mosquitto.conf] LINE:260: #ciphers
+[2025-10-24 21:24:16] [mosquitto.conf] LINE:261: 
+[2025-10-24 21:24:16] [mosquitto.conf] LINE:262: # =================================================================
+[2025-10-24 21:24:17] [mosquitto.conf] LINE:263: # Extra listeners
+[2025-10-24 21:24:17] [mosquitto.conf] LINE:264: # =================================================================
+[2025-10-24 21:24:17] [mosquitto.conf] LINE:265: 
+[2025-10-24 21:24:17] [mosquitto.conf] LINE:266: # Listen on a port/ip address combination. By using this variable 
+[2025-10-24 21:24:18] [mosquitto.conf] LINE:267: # multiple times, mosquitto can listen on more than one port. If 
+[2025-10-24 21:24:18] [mosquitto.conf] LINE:268: # this variable is used and neither bind_address nor port given, 
+[2025-10-24 21:24:18] [mosquitto.conf] LINE:269: # then the default listener will not be started.
+[2025-10-24 21:24:19] [mosquitto.conf] LINE:270: # The port number to listen on must be given. Optionally, an ip 
+[2025-10-24 21:24:19] [mosquitto.conf] LINE:271: # address or host name may be supplied as a second argument. In 
+[2025-10-24 21:24:19] [mosquitto.conf] LINE:272: # this case, mosquitto will attempt to bind the listener to that 
+[2025-10-24 21:24:19] [mosquitto.conf] LINE:273: # address and so restrict access to the associated network and 
+[2025-10-24 21:24:20] [mosquitto.conf] LINE:274: # interface. By default, mosquitto will listen on all interfaces.
+[2025-10-24 21:24:20] [mosquitto.conf] LINE:275: # Note that for a websockets listener it is not possible to bind to a host
+[2025-10-24 21:24:20] [mosquitto.conf] LINE:276: # name.
+[2025-10-24 21:24:21] [mosquitto.conf] LINE:277: # listener port-number [ip address/host name]
+[2025-10-24 21:24:21] [mosquitto.conf] LINE:278: #listener
+[2025-10-24 21:24:21] [mosquitto.conf] LINE:279: 
+[2025-10-24 21:24:21] [mosquitto.conf] LINE:280: # The maximum number of client connections to allow. This is 
+[2025-10-24 21:24:22] [mosquitto.conf] LINE:281: # a per listener setting.
+[2025-10-24 21:24:22] [mosquitto.conf] LINE:282: # Default is -1, which means unlimited connections.
+[2025-10-24 21:24:22] [mosquitto.conf] LINE:283: # Note that other process limits mean that unlimited connections 
+[2025-10-24 21:24:23] [mosquitto.conf] LINE:284: # are not really possible. Typically the default maximum number of 
+[2025-10-24 21:24:23] [mosquitto.conf] LINE:285: # connections possible is around 1024.
+[2025-10-24 21:24:23] [mosquitto.conf] LINE:286: #max_connections -1
+[2025-10-24 21:24:23] [mosquitto.conf] LINE:287: 
+[2025-10-24 21:24:24] [mosquitto.conf] LINE:288: # The listener can be restricted to operating within a topic hierarchy using
+[2025-10-24 21:24:24] [mosquitto.conf] LINE:289: # the mount_point option. This is achieved be prefixing the mount_point string
+[2025-10-24 21:24:24] [mosquitto.conf] LINE:290: # to all topics for any clients connected to this listener. This prefixing only
+[2025-10-24 21:24:25] [mosquitto.conf] LINE:291: # happens internally to the broker; the client will not see the prefix.
+[2025-10-24 21:24:25] [mosquitto.conf] LINE:292: #mount_point
+[2025-10-24 21:24:25] [mosquitto.conf] LINE:293: 
+[2025-10-24 21:24:25] [mosquitto.conf] LINE:294: # Choose the protocol to use when listening.
+[2025-10-24 21:24:26] [mosquitto.conf] LINE:295: # This can be either mqtt or websockets.
+[2025-10-24 21:24:26] [mosquitto.conf] LINE:296: # Certificate based TLS may be used with websockets, except that only the
+[2025-10-24 21:24:26] [mosquitto.conf] LINE:297: # cafile, certfile, keyfile and ciphers options are supported.
+[2025-10-24 21:24:27] [mosquitto.conf] LINE:298: #protocol mqtt
+[2025-10-24 21:24:27] [mosquitto.conf] LINE:299: 
+[2025-10-24 21:24:27] [mosquitto.conf] LINE:300: # When a listener is using the websockets protocol, it is possible to serve
+[2025-10-24 21:24:28] [mosquitto.conf] LINE:301: # http data as well. Set http_dir to a directory which contains the files you
+[2025-10-24 21:24:28] [mosquitto.conf] LINE:302: # wish to serve. If this option is not specified, then no normal http
+[2025-10-24 21:24:28] [mosquitto.conf] LINE:303: # connections will be possible.
+[2025-10-24 21:24:28] [mosquitto.conf] LINE:304: #http_dir
+[2025-10-24 21:24:29] [mosquitto.conf] LINE:305: 
+[2025-10-24 21:24:29] [mosquitto.conf] LINE:306: # Set use_username_as_clientid to true to replace the clientid that a client
+[2025-10-24 21:24:29] [mosquitto.conf] LINE:307: # connected with with its username. This allows authentication to be tied to
+[2025-10-24 21:24:30] [mosquitto.conf] LINE:308: # the clientid, which means that it is possible to prevent one client
+[2025-10-24 21:24:30] [mosquitto.conf] LINE:309: # disconnecting another by using the same clientid.
+[2025-10-24 21:24:30] [mosquitto.conf] LINE:310: # If a client connects with no username it will be disconnected as not
+[2025-10-24 21:24:30] [mosquitto.conf] LINE:311: # authorised when this option is set to true.
+[2025-10-24 21:24:31] [mosquitto.conf] LINE:312: # Do not use in conjunction with clientid_prefixes.
+[2025-10-24 21:24:31] [mosquitto.conf] LINE:313: # See also use_identity_as_username.
+[2025-10-24 21:24:31] [mosquitto.conf] LINE:314: #use_username_as_clientid
+[2025-10-24 21:24:32] [mosquitto.conf] LINE:315: 
+[2025-10-24 21:24:32] [mosquitto.conf] LINE:316: # -----------------------------------------------------------------
+[2025-10-24 21:24:32] [mosquitto.conf] LINE:317: # Certificate based SSL/TLS support
+[2025-10-24 21:24:33] [mosquitto.conf] LINE:318: # -----------------------------------------------------------------
+[2025-10-24 21:24:33] [mosquitto.conf] LINE:319: # The following options can be used to enable certificate based SSL/TLS support
+[2025-10-24 21:24:33] [mosquitto.conf] LINE:320: # for this listener. Note that the recommended port for MQTT over TLS is 8883,
+[2025-10-24 21:24:33] [mosquitto.conf] LINE:321: # but this must be set manually.
+[2025-10-24 21:24:34] [mosquitto.conf] LINE:322: #
+[2025-10-24 21:24:34] [mosquitto.conf] LINE:323: # See also the mosquitto-tls man page and the "Pre-shared-key based SSL/TLS
+[2025-10-24 21:24:34] [mosquitto.conf] LINE:324: # support" section. Only one of certificate or PSK encryption support can be
+[2025-10-24 21:24:35] [mosquitto.conf] LINE:325: # enabled for any listener.
+[2025-10-24 21:24:35] [mosquitto.conf] LINE:326: 
+[2025-10-24 21:24:35] [mosquitto.conf] LINE:327: # At least one of cafile or capath must be defined to enable certificate based
+[2025-10-24 21:24:35] [mosquitto.conf] LINE:328: # TLS encryption. They both define methods of accessing the PEM encoded
+[2025-10-24 21:24:36] [mosquitto.conf] LINE:329: # Certificate Authority certificates that have signed your server certificate
+[2025-10-24 21:24:36] [mosquitto.conf] LINE:330: # and that you wish to trust.
+[2025-10-24 21:24:36] [mosquitto.conf] LINE:331: # cafile defines the path to a file containing the CA certificates.
+[2025-10-24 21:24:37] [mosquitto.conf] LINE:332: # capath defines a directory that will be searched for files
+[2025-10-24 21:24:37] [mosquitto.conf] LINE:333: # containing the CA certificates. For capath to work correctly, the
+[2025-10-24 21:24:37] [mosquitto.conf] LINE:334: # certificate files must have ".crt" as the file ending and you must run
+[2025-10-24 21:24:38] [mosquitto.conf] LINE:335: # "c_rehash <path to capath>" each time you add/remove a certificate.
+[2025-10-24 21:24:38] [mosquitto.conf] LINE:336: #cafile
+[2025-10-24 21:24:38] [mosquitto.conf] LINE:337: #capath
+[2025-10-24 21:24:38] [mosquitto.conf] LINE:338: 
+[2025-10-24 21:24:39] [mosquitto.conf] LINE:339: # Path to the PEM encoded server certificate.
+[2025-10-24 21:24:39] [mosquitto.conf] LINE:340: #certfile
+[2025-10-24 21:24:39] [mosquitto.conf] LINE:341: 
+[2025-10-24 21:24:40] [mosquitto.conf] LINE:342: # Path to the PEM encoded keyfile.
+[2025-10-24 21:24:40] [mosquitto.conf] LINE:343: #keyfile
+[2025-10-24 21:24:40] [mosquitto.conf] LINE:344: 
+[2025-10-24 21:24:41] [mosquitto.conf] LINE:345: # By default an TLS enabled listener will operate in a similar fashion to a
+[2025-10-24 21:24:41] [mosquitto.conf] LINE:346: # https enabled web server, in that the server has a certificate signed by a CA
+[2025-10-24 21:24:41] [mosquitto.conf] LINE:347: # and the client will verify that it is a trusted certificate. The overall aim
+[2025-10-24 21:24:41] [mosquitto.conf] LINE:348: # is encryption of the network traffic. By setting require_certificate to true,
+[2025-10-24 21:24:42] [mosquitto.conf] LINE:349: # the client must provide a valid certificate in order for the network
+[2025-10-24 21:24:42] [mosquitto.conf] LINE:350: # connection to proceed. This allows access to the broker to be controlled
+[2025-10-24 21:24:42] [mosquitto.conf] LINE:351: # outside of the mechanisms provided by MQTT.
+[2025-10-24 21:24:43] [mosquitto.conf] LINE:352: #require_certificate false
+[2025-10-24 21:24:43] [mosquitto.conf] LINE:353: 
+[2025-10-24 21:24:43] [mosquitto.conf] LINE:354: # If require_certificate is true, you may set use_identity_as_username to true
+[2025-10-24 21:24:44] [mosquitto.conf] LINE:355: # to use the CN value from the client certificate as a username. If this is
+[2025-10-24 21:24:44] [mosquitto.conf] LINE:356: # true, the password_file option will not be used for this listener.
+[2025-10-24 21:24:44] [mosquitto.conf] LINE:357: #use_identity_as_username false
+[2025-10-24 21:24:44] [mosquitto.conf] LINE:358: 
+[2025-10-24 21:24:45] [mosquitto.conf] LINE:359: # If you have require_certificate set to true, you can create a certificate
+[2025-10-24 21:24:45] [mosquitto.conf] LINE:360: # revocation list file to revoke access to particular client certificates. If
+[2025-10-24 21:24:45] [mosquitto.conf] LINE:361: # you have done this, use crlfile to point to the PEM encoded revocation file.
+[2025-10-24 21:24:46] [mosquitto.conf] LINE:362: #crlfile
+[2025-10-24 21:24:46] [mosquitto.conf] LINE:363: 
+[2025-10-24 21:24:46] [mosquitto.conf] LINE:364: # If you wish to control which encryption ciphers are used, use the ciphers
+[2025-10-24 21:24:46] [mosquitto.conf] LINE:365: # option. The list of available ciphers can be optained using the "openssl
+[2025-10-24 21:24:47] [mosquitto.conf] LINE:366: # ciphers" command and should be provided in the same format as the output of
+[2025-10-24 21:24:47] [mosquitto.conf] LINE:367: # that command.
+[2025-10-24 21:24:47] [mosquitto.conf] LINE:368: #ciphers
+[2025-10-24 21:24:48] [mosquitto.conf] LINE:369: 
+[2025-10-24 21:24:48] [mosquitto.conf] LINE:370: # -----------------------------------------------------------------
+[2025-10-24 21:24:48] [mosquitto.conf] LINE:371: # Pre-shared-key based SSL/TLS support
+[2025-10-24 21:24:48] [mosquitto.conf] LINE:372: # -----------------------------------------------------------------
+[2025-10-24 21:24:49] [mosquitto.conf] LINE:373: # The following options can be used to enable PSK based SSL/TLS support for
+[2025-10-24 21:24:49] [mosquitto.conf] LINE:374: # this listener. Note that the recommended port for MQTT over TLS is 8883, but
+[2025-10-24 21:24:49] [mosquitto.conf] LINE:375: # this must be set manually.
+[2025-10-24 21:24:50] [mosquitto.conf] LINE:376: #
+[2025-10-24 21:24:50] [mosquitto.conf] LINE:377: # See also the mosquitto-tls man page and the "Certificate based SSL/TLS
+[2025-10-24 21:24:50] [mosquitto.conf] LINE:378: # support" section. Only one of certificate or PSK encryption support can be
+[2025-10-24 21:24:51] [mosquitto.conf] LINE:379: # enabled for any listener.
+[2025-10-24 21:24:51] [mosquitto.conf] LINE:380: 
+[2025-10-24 21:24:51] [mosquitto.conf] LINE:381: # The psk_hint option enables pre-shared-key support for this listener and also
+[2025-10-24 21:24:51] [mosquitto.conf] LINE:382: # acts as an identifier for this listener. The hint is sent to clients and may
+[2025-10-24 21:24:52] [mosquitto.conf] LINE:383: # be used locally to aid authentication. The hint is a free form string that
+[2025-10-24 21:24:52] [mosquitto.conf] LINE:384: # doesn't have much meaning in itself, so feel free to be creative.
+[2025-10-24 21:24:52] [mosquitto.conf] LINE:385: # If this option is provided, see psk_file to define the pre-shared keys to be
+[2025-10-24 21:24:52] [mosquitto.conf] LINE:386: # used or create a security plugin to handle them.
+[2025-10-24 21:24:53] [mosquitto.conf] LINE:387: #psk_hint
+[2025-10-24 21:24:53] [mosquitto.conf] LINE:388: 
+[2025-10-24 21:24:53] [mosquitto.conf] LINE:389: # Set use_identity_as_username to have the psk identity sent by the client used
+[2025-10-24 21:24:54] [mosquitto.conf] LINE:390: # as its username. Authentication will be carried out using the PSK rather than
+[2025-10-24 21:24:54] [mosquitto.conf] LINE:391: # the MQTT username/password and so password_file will not be used for this
+[2025-10-24 21:24:54] [mosquitto.conf] LINE:392: # listener.
+[2025-10-24 21:24:55] [mosquitto.conf] LINE:393: #use_identity_as_username false
+[2025-10-24 21:24:55] [mosquitto.conf] LINE:394: 
+[2025-10-24 21:24:55] [mosquitto.conf] LINE:395: # When using PSK, the encryption ciphers used will be chosen from the list of
+[2025-10-24 21:24:55] [mosquitto.conf] LINE:396: # available PSK ciphers. If you want to control which ciphers are available,
+[2025-10-24 21:24:56] [mosquitto.conf] LINE:397: # use the "ciphers" option.  The list of available ciphers can be optained
+[2025-10-24 21:24:56] [mosquitto.conf] LINE:398: # using the "openssl ciphers" command and should be provided in the same format
+[2025-10-24 21:24:56] [mosquitto.conf] LINE:399: # as the output of that command.
+[2025-10-24 21:24:57] [mosquitto.conf] LINE:400: #ciphers
+[2025-10-24 21:24:57] [mosquitto.conf] LINE:401: 
+[2025-10-24 21:24:57] [mosquitto.conf] LINE:402: # =================================================================
+[2025-10-24 21:24:57] [mosquitto.conf] LINE:403: # Persistence
+[2025-10-24 21:24:58] [mosquitto.conf] LINE:404: # =================================================================
+[2025-10-24 21:24:58] [mosquitto.conf] LINE:405: 
+[2025-10-24 21:24:58] [mosquitto.conf] LINE:406: # If persistence is enabled, save the in-memory database to disk 
+[2025-10-24 21:24:59] [mosquitto.conf] LINE:407: # every autosave_interval seconds. If set to 0, the persistence 
+[2025-10-24 21:24:59] [mosquitto.conf] LINE:408: # database will only be written when mosquitto exits. See also
+[2025-10-24 21:24:59] [mosquitto.conf] LINE:409: # autosave_on_changes.
+[2025-10-24 21:24:59] [mosquitto.conf] LINE:410: # Note that writing of the persistence database can be forced by 
+[2025-10-24 21:25:00] [mosquitto.conf] LINE:411: # sending mosquitto a SIGUSR1 signal.
+[2025-10-24 21:25:00] [mosquitto.conf] LINE:412: #autosave_interval 1800
+[2025-10-24 21:25:00] [mosquitto.conf] LINE:413: 
+[2025-10-24 21:25:01] [mosquitto.conf] LINE:414: # If true, mosquitto will count the number of subscription changes, retained
+[2025-10-24 21:25:01] [mosquitto.conf] LINE:415: # messages received and queued messages and if the total exceeds
+[2025-10-24 21:25:01] [mosquitto.conf] LINE:416: # autosave_interval then the in-memory database will be saved to disk.
+[2025-10-24 21:25:02] [mosquitto.conf] LINE:417: # If false, mosquitto will save the in-memory database to disk by treating
+[2025-10-24 21:25:02] [mosquitto.conf] LINE:418: # autosave_interval as a time in seconds.
+[2025-10-24 21:25:02] [mosquitto.conf] LINE:419: #autosave_on_changes false
+[2025-10-24 21:25:02] [mosquitto.conf] LINE:420: 
+[2025-10-24 21:25:03] [mosquitto.conf] LINE:421: # Save persistent message data to disk (true/false).
+[2025-10-24 21:25:03] [mosquitto.conf] LINE:422: # This saves information about all messages, including 
+[2025-10-24 21:25:03] [mosquitto.conf] LINE:423: # subscriptions, currently in-flight messages and retained 
+[2025-10-24 21:25:04] [mosquitto.conf] LINE:424: # messages.
+[2025-10-24 21:25:04] [mosquitto.conf] LINE:425: # retained_persistence is a synonym for this option.
+[2025-10-24 21:25:04] [mosquitto.conf] LINE:426: # persistence false
+[2025-10-24 21:25:04] [mosquitto.conf] LINE:427: 
+[2025-10-24 21:25:05] [mosquitto.conf] LINE:428: # The filename to use for the persistent database, not including 
+[2025-10-24 21:25:05] [mosquitto.conf] LINE:429: # the path.
+[2025-10-24 21:25:05] [mosquitto.conf] LINE:430: #persistence_file mosquitto.db
+[2025-10-24 21:25:06] [mosquitto.conf] LINE:431: 
+[2025-10-24 21:25:06] [mosquitto.conf] LINE:432: # Location for persistent database. Must include trailing /
+[2025-10-24 21:25:06] [mosquitto.conf] LINE:433: # Default is an empty string (current directory).
+[2025-10-24 21:25:07] [mosquitto.conf] LINE:434: # Set to e.g. /var/lib/mosquitto/ if running as a proper service on Linux or
+[2025-10-24 21:25:07] [mosquitto.conf] LINE:435: # similar.
+[2025-10-24 21:25:07] [mosquitto.conf] LINE:436: #persistence_location
+[2025-10-24 21:25:07] [mosquitto.conf] LINE:437: 
+[2025-10-24 21:25:08] [mosquitto.conf] LINE:438: # =================================================================
+[2025-10-24 21:25:08] [mosquitto.conf] LINE:439: # Logging
+[2025-10-24 21:25:08] [mosquitto.conf] LINE:440: # =================================================================
+[2025-10-24 21:25:09] [mosquitto.conf] LINE:441: 
+[2025-10-24 21:25:09] [mosquitto.conf] LINE:442: # Places to log to. Use multiple log_dest lines for multiple 
+[2025-10-24 21:25:09] [mosquitto.conf] LINE:443: # logging destinations.
+[2025-10-24 21:25:09] [mosquitto.conf] LINE:444: # Possible destinations are: stdout stderr syslog topic file
+[2025-10-24 21:25:10] [mosquitto.conf] LINE:445: #
+[2025-10-24 21:25:10] [mosquitto.conf] LINE:446: # stdout and stderr log to the console on the named output.
+[2025-10-24 21:25:10] [mosquitto.conf] LINE:447: #
+[2025-10-24 21:25:11] [mosquitto.conf] LINE:448: # syslog uses the userspace syslog facility which usually ends up 
+[2025-10-24 21:25:11] [mosquitto.conf] LINE:449: # in /var/log/messages or similar.
+[2025-10-24 21:25:11] [mosquitto.conf] LINE:450: #
+[2025-10-24 21:25:11] [mosquitto.conf] LINE:451: # topic logs to the broker topic '$SYS/broker/log/<severity>', 
+[2025-10-24 21:25:12] [mosquitto.conf] LINE:452: # where severity is one of D, E, W, N, I, M which are debug, error, 
+[2025-10-24 21:25:12] [mosquitto.conf] LINE:453: # warning, notice, information and message. Message type severity is used by
+[2025-10-24 21:25:12] [mosquitto.conf] LINE:454: # the subscribe/unsubscribe log_types and publishes log messages to
+[2025-10-24 21:25:13] [mosquitto.conf] LINE:455: # $SYS/broker/log/M/susbcribe or $SYS/broker/log/M/unsubscribe.
+[2025-10-24 21:25:13] [mosquitto.conf] LINE:456: #
+[2025-10-24 21:25:13] [mosquitto.conf] LINE:457: # The file destination requires an additional parameter which is the file to be
+[2025-10-24 21:25:13] [mosquitto.conf] LINE:458: # logged to, e.g. "log_dest file /var/log/mosquitto.log". The file will be
+[2025-10-24 21:25:14] [mosquitto.conf] LINE:459: # closed and reopened when the broker receives a HUP signal. Only a single file
+[2025-10-24 21:25:14] [mosquitto.conf] LINE:460: # destination may be configured.
+[2025-10-24 21:25:14] [mosquitto.conf] LINE:461: #
+[2025-10-24 21:25:15] [mosquitto.conf] LINE:462: # Note that if the broker is running as a Windows service it will default to
+[2025-10-24 21:25:15] [mosquitto.conf] LINE:463: # "log_dest none" and neither stdout nor stderr logging is available.
+[2025-10-24 21:25:15] [mosquitto.conf] LINE:464: # Use "log_dest none" if you wish to disable logging.
+[2025-10-24 21:25:15] [mosquitto.conf] LINE:465: #log_dest stderr
+[2025-10-24 21:25:16] [mosquitto.conf] LINE:466: log_dest file /tmp/mosquitto.log
+[2025-10-24 21:25:16] [mosquitto.conf] LINE:467: 
+[2025-10-24 21:25:16] [mosquitto.conf] LINE:468: # If using syslog logging (not on Windows), messages will be logged to the
+[2025-10-24 21:25:17] [mosquitto.conf] LINE:469: # "daemon" facility by default. Use the log_facility option to choose which of
+[2025-10-24 21:25:17] [mosquitto.conf] LINE:470: # local0 to local7 to log to instead. The option value should be an integer
+[2025-10-24 21:25:17] [mosquitto.conf] LINE:471: # value, e.g. "log_facility 5" to use local5.
+[2025-10-24 21:25:18] [mosquitto.conf] LINE:472: #log_facility
+[2025-10-24 21:25:18] [mosquitto.conf] LINE:473: 
+[2025-10-24 21:25:18] [mosquitto.conf] LINE:474: # Types of messages to log. Use multiple log_type lines for logging
+[2025-10-24 21:25:18] [mosquitto.conf] LINE:475: # multiple types of messages.
+[2025-10-24 21:25:19] [mosquitto.conf] LINE:476: # Possible types are: debug, error, warning, notice, information, 
+[2025-10-24 21:25:19] [mosquitto.conf] LINE:477: # none, subscribe, unsubscribe, websockets, all.
+[2025-10-24 21:25:19] [mosquitto.conf] LINE:478: # Note that debug type messages are for decoding the incoming/outgoing
+[2025-10-24 21:25:20] [mosquitto.conf] LINE:479: # network packets. They are not logged in "topics".
+[2025-10-24 21:25:20] [mosquitto.conf] LINE:480: #log_type error
+[2025-10-24 21:25:20] [mosquitto.conf] LINE:481: #log_type warning
+[2025-10-24 21:25:21] [mosquitto.conf] LINE:482: #log_type notice
+[2025-10-24 21:25:21] [mosquitto.conf] LINE:483: #log_type information
+[2025-10-24 21:25:21] [mosquitto.conf] LINE:484: log_type all
+[2025-10-24 21:25:21] [mosquitto.conf] LINE:485: 
+[2025-10-24 21:25:22] [mosquitto.conf] LINE:486: # Change the websockets logging level. This is a global option, it is not
+[2025-10-24 21:25:22] [mosquitto.conf] LINE:487: # possible to set per listener. This is an integer that is interpreted by
+[2025-10-24 21:25:22] [mosquitto.conf] LINE:488: # libwebsockets as a bit mask for its lws_log_levels enum. See the
+[2025-10-24 21:25:23] [mosquitto.conf] LINE:489: # libwebsockets documentation for more details. "log_type websockets" must also
+[2025-10-24 21:25:23] [mosquitto.conf] LINE:490: # be enabled.
+[2025-10-24 21:25:23] [mosquitto.conf] LINE:491: #websockets_log_level 0
+[2025-10-24 21:25:23] [mosquitto.conf] LINE:492: 
+[2025-10-24 21:25:24] [mosquitto.conf] LINE:493: # If set to true, client connection and disconnection messages will be included
+[2025-10-24 21:25:24] [mosquitto.conf] LINE:494: # in the log.
+[2025-10-24 21:25:24] [mosquitto.conf] LINE:495: connection_messages true
+[2025-10-24 21:25:25] [mosquitto.conf] LINE:496: 
+[2025-10-24 21:25:25] [mosquitto.conf] LINE:497: # If set to true, add a timestamp value to each log message.
+[2025-10-24 21:25:25] [mosquitto.conf] LINE:498: log_timestamp true
+[2025-10-24 21:25:25] [mosquitto.conf] LINE:499: 
+[2025-10-24 21:25:26] [mosquitto.conf] LINE:500: # =================================================================
+[2025-10-24 21:25:26] [mosquitto.conf] LINE:501: # Security
+[2025-10-24 21:25:26] [mosquitto.conf] LINE:502: # =================================================================
+[2025-10-24 21:25:27] [mosquitto.conf] LINE:503: 
+[2025-10-24 21:25:27] [mosquitto.conf] LINE:504: # If set, only clients that have a matching prefix on their 
+[2025-10-24 21:25:27] [mosquitto.conf] LINE:505: # clientid will be allowed to connect to the broker. By default, 
+[2025-10-24 21:25:28] [mosquitto.conf] LINE:506: # all clients may connect.
+[2025-10-24 21:25:28] [mosquitto.conf] LINE:507: # For example, setting "secure-" here would mean a client "secure-
+[2025-10-24 21:25:28] [mosquitto.conf] LINE:508: # client" could connect but another with clientid "mqtt" couldn't.
+[2025-10-24 21:25:28] [mosquitto.conf] LINE:509: #clientid_prefixes
+[2025-10-24 21:25:29] [mosquitto.conf] LINE:510: 
+[2025-10-24 21:25:29] [mosquitto.conf] LINE:511: # Boolean value that determines whether clients that connect 
+[2025-10-24 21:25:29] [mosquitto.conf] LINE:512: # without providing a username are allowed to connect. If set to 
+[2025-10-24 21:25:30] [mosquitto.conf] LINE:513: # false then a password file should be created (see the 
+[2025-10-24 21:25:30] [mosquitto.conf] LINE:514: # password_file option) to control authenticated client access. 
+[2025-10-24 21:25:30] [mosquitto.conf] LINE:515: # Defaults to true.
+[2025-10-24 21:25:30] [mosquitto.conf] LINE:516: #allow_anonymous true
+[2025-10-24 21:25:31] [mosquitto.conf] LINE:517: 
+[2025-10-24 21:25:31] [mosquitto.conf] LINE:518: # In addition to the clientid_prefixes, allow_anonymous and TLS 
+[2025-10-24 21:25:31] [mosquitto.conf] LINE:519: # authentication options, username based authentication is also 
+[2025-10-24 21:25:32] [mosquitto.conf] LINE:520: # possible. The default support is described in "Default 
+[2025-10-24 21:25:32] [mosquitto.conf] LINE:521: # authentication and topic access control" below. The auth_plugin 
+[2025-10-24 21:25:32] [mosquitto.conf] LINE:522: # allows another authentication method to be used.
+[2025-10-24 21:25:32] [mosquitto.conf] LINE:523: # Specify the path to the loadable plugin and see the 
+[2025-10-24 21:25:33] [mosquitto.conf] LINE:524: # "Authentication and topic access plugin options" section below.
+[2025-10-24 21:25:33] [mosquitto.conf] LINE:525: #auth_plugin
+[2025-10-24 21:25:33] [mosquitto.conf] LINE:526: 
+[2025-10-24 21:25:34] [mosquitto.conf] LINE:527: # -----------------------------------------------------------------
+[2025-10-24 21:25:34] [mosquitto.conf] LINE:528: # Default authentication and topic access control
+[2025-10-24 21:25:34] [mosquitto.conf] LINE:529: # -----------------------------------------------------------------
+[2025-10-24 21:25:35] [mosquitto.conf] LINE:530: 
+[2025-10-24 21:25:35] [mosquitto.conf] LINE:531: # Control access to the broker using a password file. This file can be
+[2025-10-24 21:25:35] [mosquitto.conf] LINE:532: # generated using the mosquitto_passwd utility. If TLS support is not compiled
+[2025-10-24 21:25:35] [mosquitto.conf] LINE:533: # into mosquitto (it is recommended that TLS support should be included) then
+[2025-10-24 21:25:36] [mosquitto.conf] LINE:534: # plain text passwords are used, in which case the file should be a text file
+[2025-10-24 21:25:36] [mosquitto.conf] LINE:535: # with lines in the format:
+[2025-10-24 21:25:36] [mosquitto.conf] LINE:536: # username:password
+[2025-10-24 21:25:37] [mosquitto.conf] LINE:537: # The password (and colon) may be omitted if desired, although this 
+[2025-10-24 21:25:37] [mosquitto.conf] LINE:538: # offers very little in the way of security.
+[2025-10-24 21:25:37] [mosquitto.conf] LINE:539: # 
+[2025-10-24 21:25:37] [mosquitto.conf] LINE:540: # See the TLS client require_certificate and use_identity_as_username options
+[2025-10-24 21:25:38] [mosquitto.conf] LINE:541: # for alternative authentication options.
+[2025-10-24 21:25:38] [mosquitto.conf] LINE:542: #password_file
+[2025-10-24 21:25:38] [mosquitto.conf] LINE:543: 
+[2025-10-24 21:25:39] [mosquitto.conf] LINE:544: # Access may also be controlled using a pre-shared-key file. This requires
+[2025-10-24 21:25:39] [mosquitto.conf] LINE:545: # TLS-PSK support and a listener configured to use it. The file should be text
+[2025-10-24 21:25:39] [mosquitto.conf] LINE:546: # lines in the format:
+[2025-10-24 21:25:39] [mosquitto.conf] LINE:547: # identity:key
+[2025-10-24 21:25:40] [mosquitto.conf] LINE:548: # The key should be in hexadecimal format without a leading "0x".
+[2025-10-24 21:25:40] [mosquitto.conf] LINE:549: #psk_file
+[2025-10-24 21:25:40] [mosquitto.conf] LINE:550: 
+[2025-10-24 21:25:41] [mosquitto.conf] LINE:551: # Control access to topics on the broker using an access control list
+[2025-10-24 21:25:41] [mosquitto.conf] LINE:552: # file. If this parameter is defined then only the topics listed will
+[2025-10-24 21:25:41] [mosquitto.conf] LINE:553: # have access.
+[2025-10-24 21:25:41] [mosquitto.conf] LINE:554: # If the first character of a line of the ACL file is a # it is treated as a
+[2025-10-24 21:25:42] [mosquitto.conf] LINE:555: # comment.
+[2025-10-24 21:25:42] [mosquitto.conf] LINE:556: # Topic access is added with lines of the format:
+[2025-10-24 21:25:42] [mosquitto.conf] LINE:557: #
+[2025-10-24 21:25:43] [mosquitto.conf] LINE:558: # topic [read|write|readwrite] <topic>
+[2025-10-24 21:25:43] [mosquitto.conf] LINE:559: # 
+[2025-10-24 21:25:43] [mosquitto.conf] LINE:560: # The access type is controlled using "read", "write" or "readwrite". This
+[2025-10-24 21:25:44] [mosquitto.conf] LINE:561: # parameter is optional (unless <topic> contains a space character) - if not
+[2025-10-24 21:25:44] [mosquitto.conf] LINE:562: # given then the access is read/write.  <topic> can contain the + or #
+[2025-10-24 21:25:44] [mosquitto.conf] LINE:563: # wildcards as in subscriptions.
+[2025-10-24 21:25:44] [mosquitto.conf] LINE:564: # 
+[2025-10-24 21:25:45] [mosquitto.conf] LINE:565: # The first set of topics are applied to anonymous clients, assuming
+[2025-10-24 21:25:45] [mosquitto.conf] LINE:566: # allow_anonymous is true. User specific topic ACLs are added after a 
+[2025-10-24 21:25:45] [mosquitto.conf] LINE:567: # user line as follows:
+[2025-10-24 21:25:46] [mosquitto.conf] LINE:568: #
+[2025-10-24 21:25:46] [mosquitto.conf] LINE:569: # user <username>
+[2025-10-24 21:25:46] [mosquitto.conf] LINE:570: #
+[2025-10-24 21:25:46] [mosquitto.conf] LINE:571: # The username referred to here is the same as in password_file. It is
+[2025-10-24 21:25:47] [mosquitto.conf] LINE:572: # not the clientid.
+[2025-10-24 21:25:47] [mosquitto.conf] LINE:573: #
+[2025-10-24 21:25:47] [mosquitto.conf] LINE:574: #
+[2025-10-24 21:25:48] [mosquitto.conf] LINE:575: # If is also possible to define ACLs based on pattern substitution within the
+[2025-10-24 21:25:48] [mosquitto.conf] LINE:576: # topic. The patterns available for substition are:
+[2025-10-24 21:25:48] [mosquitto.conf] LINE:577: #
+[2025-10-24 21:25:49] [mosquitto.conf] LINE:578: # %c to match the client id of the client
+[2025-10-24 21:25:49] [mosquitto.conf] LINE:579: # %u to match the username of the client
+[2025-10-24 21:25:49] [mosquitto.conf] LINE:580: #
+[2025-10-24 21:25:49] [mosquitto.conf] LINE:581: # The substitution pattern must be the only text for that level of hierarchy.
+[2025-10-24 21:25:50] [mosquitto.conf] LINE:582: #
+[2025-10-24 21:25:50] [mosquitto.conf] LINE:583: # The form is the same as for the topic keyword, but using pattern as the
+[2025-10-24 21:25:50] [mosquitto.conf] LINE:584: # keyword.
+[2025-10-24 21:25:51] [mosquitto.conf] LINE:585: # Pattern ACLs apply to all users even if the "user" keyword has previously
+[2025-10-24 21:25:51] [mosquitto.conf] LINE:586: # been given.
+[2025-10-24 21:25:51] [mosquitto.conf] LINE:587: #
+[2025-10-24 21:25:52] [mosquitto.conf] LINE:588: # If using bridges with usernames and ACLs, connection messages can be allowed
+[2025-10-24 21:25:52] [mosquitto.conf] LINE:589: # with the following pattern:
+[2025-10-24 21:25:52] [mosquitto.conf] LINE:590: # pattern write $SYS/broker/connection/%c/state
+[2025-10-24 21:25:52] [mosquitto.conf] LINE:591: #
+[2025-10-24 21:25:53] [mosquitto.conf] LINE:592: # pattern [read|write|readwrite] <topic>
+[2025-10-24 21:25:53] [mosquitto.conf] LINE:593: #
+[2025-10-24 21:25:53] [mosquitto.conf] LINE:594: # Example:
+[2025-10-24 21:25:54] [mosquitto.conf] LINE:595: #
+[2025-10-24 21:25:54] [mosquitto.conf] LINE:596: # pattern write sensor/%u/data
+[2025-10-24 21:25:54] [mosquitto.conf] LINE:597: #
+[2025-10-24 21:25:54] [mosquitto.conf] LINE:598: #acl_file
+[2025-10-24 21:25:55] [mosquitto.conf] LINE:599: 
+[2025-10-24 21:25:55] [mosquitto.conf] LINE:600: # -----------------------------------------------------------------
+[2025-10-24 21:25:55] [mosquitto.conf] LINE:601: # Authentication and topic access plugin options
+[2025-10-24 21:25:56] [mosquitto.conf] LINE:602: # -----------------------------------------------------------------
+[2025-10-24 21:25:56] [mosquitto.conf] LINE:603: 
+[2025-10-24 21:25:56] [mosquitto.conf] LINE:604: # If the auth_plugin option above is used, define options to pass to the
+[2025-10-24 21:25:56] [mosquitto.conf] LINE:605: # plugin here as described by the plugin instructions. All options named
+[2025-10-24 21:25:57] [mosquitto.conf] LINE:606: # using the format auth_opt_* will be passed to the plugin, for example:
+[2025-10-24 21:25:57] [mosquitto.conf] LINE:607: #
+[2025-10-24 21:25:57] [mosquitto.conf] LINE:608: # auth_opt_db_host
+[2025-10-24 21:25:58] [mosquitto.conf] LINE:609: # auth_opt_db_port 
+[2025-10-24 21:25:58] [mosquitto.conf] LINE:610: # auth_opt_db_username
+[2025-10-24 21:25:58] [mosquitto.conf] LINE:611: # auth_opt_db_password
+[2025-10-24 21:25:59] [mosquitto.conf] LINE:612: 
+[2025-10-24 21:25:59] [mosquitto.conf] LINE:613: 
+[2025-10-24 21:25:59] [mosquitto.conf] LINE:614: # =================================================================
+[2025-10-24 21:25:59] [mosquitto.conf] LINE:615: # Bridges
+[2025-10-24 21:26:00] [mosquitto.conf] LINE:616: # =================================================================
+[2025-10-24 21:26:00] [mosquitto.conf] LINE:617: 
+[2025-10-24 21:26:00] [mosquitto.conf] LINE:618: # A bridge is a way of connecting multiple MQTT brokers together.
+[2025-10-24 21:26:01] [mosquitto.conf] LINE:619: # Create a new bridge using the "connection" option as described below. Set
+[2025-10-24 21:26:01] [mosquitto.conf] LINE:620: # options for the bridges using the remaining parameters. You must specify the
+[2025-10-24 21:26:01] [mosquitto.conf] LINE:621: # address and at least one topic to subscribe to.
+[2025-10-24 21:26:02] [mosquitto.conf] LINE:622: # Each connection must have a unique name.
+[2025-10-24 21:26:02] [mosquitto.conf] LINE:623: # The address line may have multiple host address and ports specified. See
+[2025-10-24 21:26:02] [mosquitto.conf] LINE:624: # below in the round_robin description for more details on bridge behaviour if
+[2025-10-24 21:26:03] [mosquitto.conf] LINE:625: # multiple addresses are used.
+[2025-10-24 21:26:03] [mosquitto.conf] LINE:626: # The direction that the topic will be shared can be chosen by 
+[2025-10-24 21:26:03] [mosquitto.conf] LINE:627: # specifying out, in or both, where the default value is out. 
+[2025-10-24 21:26:03] [mosquitto.conf] LINE:628: # The QoS level of the bridged communication can be specified with the next
+[2025-10-24 21:26:04] [mosquitto.conf] LINE:629: # topic option. The default QoS level is 0, to change the QoS the topic
+[2025-10-24 21:26:04] [mosquitto.conf] LINE:630: # direction must also be given.
+[2025-10-24 21:26:04] [mosquitto.conf] LINE:631: # The local and remote prefix options allow a topic to be remapped when it is
+[2025-10-24 21:26:04] [mosquitto.conf] LINE:632: # bridged to/from the remote broker. This provides the ability to place a topic
+[2025-10-24 21:26:05] [mosquitto.conf] LINE:633: # tree in an appropriate location. 
+[2025-10-24 21:26:05] [mosquitto.conf] LINE:634: # For more details see the mosquitto.conf man page.
+[2025-10-24 21:26:05] [mosquitto.conf] LINE:635: # Multiple topics can be specified per connection, but be careful 
+[2025-10-24 21:26:06] [mosquitto.conf] LINE:636: # not to create any loops.
+[2025-10-24 21:26:06] [mosquitto.conf] LINE:637: # If you are using bridges with cleansession set to false (the default), then
+[2025-10-24 21:26:06] [mosquitto.conf] LINE:638: # you may get unexpected behaviour from incoming topics if you change what
+[2025-10-24 21:26:06] [mosquitto.conf] LINE:639: # topics you are subscribing to. This is because the remote broker keeps the
+[2025-10-24 21:26:07] [mosquitto.conf] LINE:640: # subscription for the old topic. If you have this problem, connect your bridge
+[2025-10-24 21:26:07] [mosquitto.conf] LINE:641: # with cleansession set to true, then reconnect with cleansession set to false
